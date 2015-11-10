@@ -1,0 +1,95 @@
+﻿.decimal-list li {
+	behavior: expression(
+		(this.listFlag!=null ? this.listFlag=true : (
+			(function(t){
+				if (t.parentNode.tagName == 'OL') {
+					var txt = (++t.parentNode.IEcounter || (t.parentNode.IEcounter = 1));
+					if (!t.childNodes.length) {
+						t.innerHTML = '<before>'+txt+'</before>';
+					} else {
+						t.before = document.createElement("before");
+						t.before.appendChild(document.createTextNode(txt));
+						t.insertBefore(t.before,t.childNodes(0));
+					}
+					t.style.behavior= '';
+				}
+			})(this)
+		),this.listFlag=true)
+	);
+}
+.dott-list li,
+.header,
+.two-columns .box,
+.leaders,
+.team-slider li,
+.also-list li,
+.phones-list,
+.text-container .doc-list li a,
+.dashed-list li,
+.card-price-list li,
+.card-preview li,
+.card-preview li a,
+.card-feature dd>span,
+.benefits-list li,
+.legal-list li,
+.contest-switcher li
+{behavior:expression(!this.isInserted==true ? this.isInserted=(this.insertBefore(document.createElement("after"))) : '');}
+/* zoom 1 */
+.add-info,
+.team-drop,
+.object-search,
+.realty,
+.object-alt,
+.sub-nav ul,
+.map-drop,
+.map-wrap,
+.map-wrap .map,
+div.cselect ul label{
+	zoom: 1;
+}
+/* zoom 1 end */
+.logotype-kazan,
+.logotype-lend-market{
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+}
+.two-columns .box{padding-right: 24px;}
+.objects-list{margin: 0 -26px;}
+.objects-list li{padding-left: 27px;}
+.contacts .view-map a{
+	background: none;
+	border-bottom: 1px dashed #258238;
+}
+.contacts .view-map a:hover{border-bottom-color: transparent;}
+.contacts .work a>span{
+	background: none;
+	border-bottom: 1px dashed #515151;
+}
+.contacts .work a:hover>span{border-bottom-color: transparent;}
+.review-form .form-row{margin: 0 -12px;}
+.review-form .form-row .form-line{margin-left: 12px;}
+.find-object{width: 180px;}
+.terms-list ul a{
+	background: none;
+	border-bottom: 1px dashed #248338;
+}
+.terms-list ul a:hover{border-bottom-color: transparent;}
+.terms-list .terms-list-holder{margin: 0 -15px;}
+.terms-list .terms-list-col{margin-left: 15px;}
+.additional-info .caption p a{
+	background: none;
+	border-bottom: 1px dashed #258238;
+}
+.additional-info .caption p a:hover{border-bottom-color: transparent;}
+.options-calculator .label-holder{padding-right: 13px;}
+.images-list li{margin-left: 4px;}
+
+.gallery-list{margin: 0 -32px;}
+.gallery-list li{padding-left: 32px;}
+.contest-switcher li + li{margin-left: 4px;}
+.social-networks a{
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+}

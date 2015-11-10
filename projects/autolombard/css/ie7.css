@@ -1,0 +1,24 @@
+﻿.services-list li,
+.default-list li{
+	background: url(../img/bullet-list.png) no-repeat 0 3px;
+}
+.decimal-list li{
+	behavior: expression(
+		(this.listFlag!=null ? this.listFlag=true : (
+			(function(t){
+				if (t.parentNode.tagName == 'OL') {
+					var txt = (++t.parentNode.IEcounter || (t.parentNode.IEcounter = 1))+'.';
+					if (!t.childNodes.length) {
+						t.innerHTML = '<before>'+txt+'</before>';
+					} else {
+						t.before = document.createElement("before");
+						t.before.appendChild(document.createTextNode(txt));
+						t.insertBefore(t.before,t.childNodes(0));
+					}
+					t.style.behavior= '';
+				}
+			})(this)
+		),this.listFlag=true)
+	);
+}
+.two-columns .column{width: 49.5%;}

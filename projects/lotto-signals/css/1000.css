@@ -1,0 +1,197 @@
+/**@media only screen and (max-width: 1199px){}*/
+
+/*style for navigation's links*/
+.nav-list > li > a,
+.nav-list > li > strong > a{
+	font-size: 11px;
+	line-height: 18px;
+	padding: 21px 6px;
+}
+/*style for navigation's links and*/
+
+/*main slider*/
+.signals > span{ padding: 7px 10px 33px; }
+.jackpot-large{
+	font-size: 70px;
+	line-height: 78px;
+	margin: 0 0 -4px;
+}
+.time-draw{ margin: 0 0 -5px; }
+.odds{ padding: 0 0 4px; }
+.lottery-label{
+	bottom: 10px;
+	position: absolute;
+	right: 15px;
+}
+.slide-buttons{
+	margin: 0;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: 500px;
+	text-align: left;
+}
+/*main slider end*/
+
+/*how work slider*/
+#how-work-pager a{ font-size: 17px; }
+#how-work-pager span.separator{
+	font-size: 16px;
+	margin: 0;
+}
+.how-work-slider .slide-wrap .slide-text{ font-size: 19px; }
+.how-work-slider .button-wrap .open-account{ background-size: 85% auto; }
+.how-work-slider .button-wrap .slide-button a{
+	font-size: 32px;
+	padding: 10px 0;
+}
+.how-work-slider .slide-wrap .slide-img img{ max-width: 60%; }
+/*how work slider end*/
+
+/*Post Page Review*/
+.postpage-contentframe{ margin: 0 0 0 28% }
+.postpage-aside{ width: 28% }
+/*Post Page end*/
+
+/*Game Number Checker*/
+.designation{
+	clear: left;
+	padding: 20px 0 0;
+}
+.lottery-numbers-wrapper{
+	padding: 10px 0 20px;
+	margin: 0;
+}
+.lottery-numbers-wrapper ul.lottery-numbers{
+	padding-bottom: 0;
+	margin: 0;
+}
+.box.days-types ul li.group-title{ width: 50px; }
+.lottery-results .align-left.indent{
+	float: none;
+	padding: 0 0 20px;
+}
+/*Game Number Checker end*/
+
+/*our rating*/
+.likes{
+	padding-right: 0;
+	font-size: 14px;
+}
+.likes > div{ padding-left: 5px; }
+.likes > div:first-child{ padding: 0 5px 0 0; }
+/*our rating end*/
+
+/*selects area*/
+.selects-area .form-row.row-full > .w1{
+	width: 51.8%;
+	float: none;
+	position: relative;
+	left: auto;
+}
+.select-item .view-game .add-game{ right: -20px; }
+.checker-form .view-game-holder .w2,
+.checker-form .view-game-holder .w3{
+	float: left;
+	width: 50%;
+}
+.checker-form .view-game-holder .w2 .form-line,
+.checker-form .view-game-holder .w3 .form-line{ padding-bottom: 10px; }
+.selects-area .view-game-holder{
+	float: none;
+	width: 100%;
+}
+.supper-ball li{ padding: 0 10px 10px 0; }
+.select-item .add-game{ margin-left: -30px; }
+.select-item .choose-game .add-game{
+	right: 28%;
+	margin: 0;
+	position: absolute;
+}
+.states-select select{
+	width: 100%;
+	background-image: url("../img/sprite-arrows.png");
+	background-repeat: no-repeat;
+	background-position: right -627px;
+	background-color: #fff;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	color: #4d4d4d;
+	display: block;
+	font: 14px/19px Arial, Helvetica, sans-serif;
+	padding: 7px 30px 6px 9px;
+	position: relative;
+	line-height: 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-ms-appearance: none;
+	appearance: none;
+}
+select::-ms-expand{ display: none; }
+/*selects area end*/
+
+.mag-intro-nav-bar li a{
+	border-radius: 8px;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 3px 11px 6px;
+}
+/*forum page*/
+.footer-lang button.cselect{ min-width: 100px; }
+.forum-profile .aside .tabs-menu-list li:hover{ border: 2px solid #e0e0e0; }
+.forum-profile .aside .tabs-menu-list li a:hover{
+	color: #212121;
+	background: #fff;
+}
+.forum-profile .aside .tabs-menu-list li.active a:hover{
+	background: #0076a9;
+	color: #fff;
+}
+/*forum page end*/
+
+/*forum my-lotto*/
+.forum-profile .birthday-select select{
+	width: 100%;
+	background-image: url("../img/sprite-arrows.png");
+	background-repeat: no-repeat;
+	background-position: right -627px;
+	background-color: #cdcdcd;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	color: #000;
+	display: block !important;
+	font: 14px/19px Arial, Helvetica, sans-serif;
+	padding: 7px 30px 6px 9px;
+	position: relative;
+	line-height: 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-ms-appearance: none;
+	appearance: none;
+	outline: none;
+}
+.forum-profile .birthday-select select option{ outline: none; }
+.forum-profile .birthday-select button{ display: none !important }
+.forum-profile .manager-list.short li:nth-child(3n+1) .options-cover .edit-subscription-drop{
+	left: 0;
+	margin-left: 0;
+}
+.forum-profile .manager-list.short li:nth-child(3n) .options-cover .edit-subscription-drop{
+	left: auto;
+	right: 0;
+	margin-left: 0;
+}
+.forum-profile .manager-list.short li:nth-child(3n+1) .options-cover .edit-subscription-drop > .holder:before{
+	left: 20%;
+	margin-left: 0;
+}
+.forum-profile .manager-list.short li:nth-child(3n) .options-cover .edit-subscription-drop > .holder:before{
+	left: auto;
+	right: 20%;
+	margin-left: 0;
+}
+/*forum my-lotto end*/

@@ -1,0 +1,994 @@
+/**@media only screen and (max-width: 991px){}*/
+
+/*header*/
+.counter{
+	text-align: center;
+	z-index: 0;
+}
+.header-banner{
+	position: relative;
+	display: block;
+	right: auto;
+	bottom: auto;
+	top: auto;
+	padding: 14px 0 5px;
+}
+.banner-holder{
+	display: table;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+.banner-holder > div{ display: table-cell; }
+.counter-center{ padding: 10px 16px 0 6px; }
+.counter-cell{
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.counter-cell > *{ display: table-cell; }
+.counter-left{ width: 55%; }
+.counter-title{
+	text-align: left;
+	font-size: 30px;
+	line-height: 34px;
+	vertical-align: top;
+}
+.arrow-counter{
+	background: url(../img/arrow-counter-small.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 36px;
+	height: 41px;
+}
+.header-banner .lovers-counter{
+	font-size: 54px;
+	line-height: 58px;
+	padding: 0 0 0 10px;
+	vertical-align: top;
+	text-align: center;
+}
+.header-banner .lovers-counter.length-letters-12{ font-size: 50px; }
+.header-banner .lovers-counter.length-letters-13{ font-size: 46px; }
+.header-banner .lovers-counter.length-letters-14{ font-size: 42px; }
+.header-banner .lotto-lovers{
+	max-width: 243px;
+	padding: 0;
+	font-size: 21px;
+	line-height: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 25px;
+}
+.header-banner [class*="btn-"]{
+	font-size: 23px;
+	line-height: 25px;
+	padding: 12px 10px;
+}
+.header-banner [class*="btn-"] > span { display: inline; }
+.user-options{
+	top: -73px;
+	height: 36px;
+	z-index: 7;
+	right: 1.25%;
+}
+.user-login-list{ height: 60px; }
+.nav-holder{ margin: 0; }
+.user-options > li, .user-options > li:first-child{ border-color: #e0e0e0; }
+.user-options > li > a{
+	background: none;
+	color: #000;
+}
+.user-options > li:first-child > a{ border-radius: 3px 0 0 3px; }
+.user-options > li:last-child > a{ border-radius: 0 3px 3px 0; }
+.nav-list{
+	display: table;
+	width: 100%;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.nav-list > li{
+	display: table-cell;
+	float: none;
+	padding: 0;
+	border: none;
+}
+.nav-list > li > strong{ text-align: center; }
+.nav-list > li:hover > a,
+.nav-list > li:hover > strong > a{ background: none; }
+.nav-list > li.hover > a,
+.nav-list > li.hover > strong > a{ background: rgba(0, 0, 0, 0.11); }
+.header-nav .max-wrap{ padding: 0; }
+.nav-list > li .icon-small-ic{ left: 8px; }
+.nav-list > li:first-child > a, .nav-list > li:first-child > strong > a{ padding-left: 38px; }
+.nav-list > li:hover .first-drop{
+	top: -9999px;
+	opacity: 0;
+}
+.nav-list > li.hover .first-drop{
+	top: 100%;
+	opacity: 1;
+}
+.first-drop.complex-drop .corner-drop{ left: 51%; }
+.first-drop.drop-boxes .corner-drop{ left: 52%; }
+.first-drop.drop-boxes.drop-inform .corner-drop{ left: 60%; }
+.first-drop .corner-drop{ left: 49%; }
+.nav-list > .has-drop:first-child .first-drop{ margin-left: 10px; }
+.nav-list > .has-drop:first-child .first-drop .corner-drop{ left: 40%; }
+.first-drop.large-drop{ margin-left: -193px }
+.first-drop.large-drop .corner-drop{ left: 40%; }
+.first-drop.complex-drop{ margin-left: -332px; }
+.first-drop.drop-boxes{ margin-left: -308px; }
+/*.first-drop.drop-boxes.drop-inform{margin-left: -278px;}*/
+.first-drop .drop-holder{ margin-left: 0; }
+/*.has-drop:last-child .first-drop{margin-left: -140px;}*/
+/*.has-drop:last-child .first-drop .corner-drop{left: 87%;}*/
+
+.user-options-drop{
+	margin-top: 0;
+	padding: 8px 0 0;
+}
+.nav-list > li > a,
+.nav-list > li > strong > a{ padding: 21px 5px; }
+.nav-list > li > a,
+.nav-list > li:last-child > strong > a{ padding-right: 20px; }
+.user-options{ height: 36px; }
+.user-options > li:hover > a{ background: rgba(0, 0, 0, 0.15); }
+/*
+.user-options > li:hover > a.active{ background: rgba(0, 0, 0, 0.25); }
+*/
+/*header end*/
+
+/*main blocks*/
+.two-sidebars .content-wrap{ float: none; }
+.content-wrap .content{ margin: 0 270px 0 0; }
+.two-sidebars .content{ margin-right: 0; }
+.content .content-holder{ float: none; }
+.two-sidebars .content .content-holder{ float: left; }
+.content .content-frame{ margin-left: 0; }
+.two-sidebars .content .content-frame{ margin-left: 300px; }
+.two-sidebars .reverse .aside{ margin: 0; }
+.two-sidebars .reverse .content-holder{
+	float: none;
+	margin: 0 0 0 290px;
+	width: auto;
+}
+.two-sidebars .reverse .content-frame{
+	float: left;
+	width: 100%;
+	margin-left: 0;
+}
+.content .aside{
+	display: none;
+	width: 270px;
+	background-color: #fff;
+}
+.two-sidebars .content .aside{
+	display: inline;
+	width: 270px;
+}
+.sidebar{
+	margin: 0 0 0 -270px;
+	width: 270px;
+}
+.two-sidebars .sidebar{
+	float: none;
+	display: block;
+	width: auto;
+	overflow: hidden;
+	margin: 0 -15px;
+}
+.two-sidebars .sidebar.mag-aside{
+	clear: both;
+	margin: 0 0 0 -1px;
+}
+.two-sidebars .sidebar .widget-group{
+	float: left;
+	width: 50.0%;
+	padding: 0 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.two-sidebars .sidebar .widget{
+	position: relative;
+	padding-top: 0;
+	padding-right: 0;
+}
+.two-sidebars .sidebar .widget:after{
+	content: '';
+	display: inline-block;
+	display: -moz-inline-stack;
+	height: 100%;
+	vertical-align: bottom;
+	margin-left: -4px;
+}
+.two-sidebars .sidebar .widget h3 + *{
+	display: inline-block;
+	width: 98%;
+	vertical-align: bottom;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.two-sidebars .sidebar .widget-wrapper h3{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	max-height: 19px;
+	padding: 11px 14px 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+/*main blocks end*/
+
+/*main headers*/
+.main-heading h1{ padding: 5px 0 }
+/*main headers end*/
+[class*="-list"].s5 > li{ width: 25.0%; }
+[class*="-list"].s4 > li{
+	width: 33.3%;
+	padding: 34px 0 0;
+}
+[class*="-list"].s4 > li:first-child, [class*="-list"].s4 > li:nth-child(2), [class*="-list"].s4 > li:nth-child(3){ padding: 0; }
+[class*="-list"].s4 > li:first-child, [class*="-list"].s4 > li:nth-child(2){ padding: 0; }
+[class*="-list"].s3 > li{ width: 50.0%; }
+[class*="-list"].s2 > li{ width: 100.0%; }
+/*default table*/
+.default-table{ overflow: hidden; }
+.default-table tbody,
+.default-table td,
+.default-table tr,
+.default-table{ display: block; }
+.default-table tbody{
+	display: block;
+	float: left;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.default-table tr{
+	float: left;
+	width: 100%;
+	clear: both;
+	border-right: 0;
+	z-index: 0;
+	letter-spacing: -4px;
+	text-align: center;
+}
+.default-table td{
+	font-size: 14px;
+	letter-spacing: normal;
+	background: none;
+	border: none;
+	display: inline-block;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+}
+.free-lines .default-table td[data-label]{ vertical-align: top; }
+.default-table tr:hover td,
+.blur .default-table tr.visible:hover td{ background: none; }
+.default-table.td1 td{ width: 100.0%; }
+.default-table.td2 td{ width: 50.0%; }
+.default-table.td3 td{ width: 33.3%; }
+.default-table.td3 td[colspan="2"]{ width: 66.6%; }
+.default-table.td4 td{ width: 25.0%; }
+.default-table.td5 td{ width: 20.0%; }
+.default-table.td2-1 td:first-child + td{ width: 66.6%; }
+.default-table.td2-1 td:first-child + td + td{ width: 33.3%; }
+.default-table tr.even td{ background: none; }
+.default-table tr:first-child td:first-child{ border-top: none; }
+.default-table th:first-child{ text-align: left; }
+.default-table td:first-child > div{
+	text-align: center;
+	display: block;
+	margin: 0;
+	padding: 8px 11px;
+}
+.default-table td > *{
+	text-align: center;
+	white-space: normal;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px 5px;
+}
+.default-table td > .jackpot{ text-align: center; }
+.default-table td .rate{
+	text-align: center;
+	padding: 0 4px;
+}
+.default-table tr td:first-child{
+	background-color: #f9f9f9;
+	display: block;
+	width: 100%;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 0;
+}
+.default-table td:last-child{
+	display: block;
+	text-align: center;
+	width: 100%;
+	border-top: 1px solid #d8d8d8;
+}
+.default-table .buttons-group{
+	text-align: center;
+	padding: 12px 1.2%;
+	width: auto;
+	display: block;
+	font-size: 0;
+	letter-spacing: -4px;
+}
+.default-table .buttons-group > span{
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 5px;
+	margin: 0;
+}
+.default-table .buttons-group a{ display: block; }
+.default-table .buttons-group span:first-child a{ margin: 0 auto; }
+.default-table thead{ display: none; }
+.free-lines .default-table{ border-top: 2px solid #e0e0e0; background: none; }
+.free-lines .default-table tr td:first-child{ background: none; }
+.free-lines .default-table:first-child{ border-top: none; }
+.free-lines-drop .winning-heading td{ border: none; }
+.default-table tr td.hide-col{ display: none; }
+
+.default-table .lottery-numbers{ overflow: hidden; }
+.default-table .lottery-numbers li{ float: left; }
+/*table-type-1-1*/
+.table-type-1-1 .td4 .locate-col{ width: 18%; }
+.table-type-1-1 .td4 .day-col{ width: 10%; }
+.table-type-1-1 .td4 .winning-col{ width: 47%; }
+.default-table .br{ display: inline; }
+/*table-type-1-1 end*/
+
+/*table-type-1-2*/
+.table-type-1-2 .day-col{
+	width: 23%;
+	text-align: center;
+}
+.day-col.no-day-icon{ display: none; }
+/*table-type-1-2 end*/
+
+/*table-type-3-1*/
+.table-type-3-1 .buttons-col{ padding-left: 0; }
+.table-type-3-1 .td4 .img-col{ display: table; }
+.table-type-3-1 .td4 .img-col > div{
+	display: table-cell;
+	vertical-align: middle;
+}
+.table-type-3-1 .td4 .rating-col,
+.table-type-3-1 .td4 .deposit-col,
+.table-type-3-1 .td4 .offered-col{
+	width: 33.3%;
+	position: relative;
+}
+.default-table .rating-col > div,
+.default-table .deposit-col > div,
+.default-table .offered-col > div{
+	line-height: 28px;
+	padding: 5px 5px 10px;
+}
+.table-type-3-1 .td4 .promotion-col{
+	width: 55%;
+	display: none;
+}
+.default-table td[data-label]:before{
+	content: attr(data-label);
+	display: block;
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	position: relative;
+	font-size: 9px;
+	line-height: 11px;
+	color: #262626;
+	font-weight: normal;
+	white-space: normal;
+	text-transform: uppercase;
+	padding: 10px 0 0;
+}
+.table-type-3-1 td.buttons-col:before{
+	content: attr(data-copy-text);
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 18px;
+	color: #262626;
+	white-space: normal;
+	text-transform: none;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 10px 5px;
+}
+/*table-type-3-1 end*/
+
+/*table-type-4-2*/
+.table-type-4-2 td.day-col{
+	text-align: left;
+	width: 25%;
+	padding-left: 6%;
+}
+/*table-type-4-2 end*/
+
+/*table-type-7-1*/
+.table-type-7-1 .td4 td{ width: 33.3%; }
+.ls-best-odds.td5 td,
+.ls-biggest-jackpots.td5 td{ width: 25%; }
+.table-type-7-1 td:last-child,
+.ls-best-odds td:last-child,
+.ls-biggest-jackpots td:last-child{ width: 100%; }
+.table-type-7-1 tr td.visual-col,
+.ls-best-odds tr td:first-child,
+.ls-biggest-jackpots tr td:first-child{
+	display: inline-block;
+	vertical-align: middle;
+	width: 66.6%;
+	position: relative;
+	min-height: 50px;
+}
+.table-type-7-1 tr td.visual-col:after,
+.ls-best-odds tr td:first-child:after,
+.ls-biggest-jackpots tr td:first-child:after{
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: -1px;
+	bottom: -1px;
+	width: 50%;
+	background: #f9f9f9;
+	border-bottom: 1px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
+}
+.ls-best-odds tr td:first-child:after,
+.ls-biggest-jackpots tr td:first-child:after{ bottom: 0; }
+.table-type-7-1 .lottery-ico,
+.ls-best-odds .lottery-ico,
+.ls-biggest-jackpots .lottery-ico{
+	font-size: 0;
+	letter-spacing: -4px;
+	padding: 0;
+}
+.table-type-7-1 .lottery-ico > div,
+.ls-best-odds .lottery-ico > div,
+.ls-biggest-jackpots .lottery-ico > div{
+	white-space: normal;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px 5px;
+	width: 50%;
+	font-size: 14px;
+	letter-spacing: normal;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.table-type-7-1 td.day-col,
+.table-type-7-1 .even td.day-col,
+.ls-best-odds td.day-col,
+.ls-best-odds .even td.day-col,
+.ls-biggest-jackpots td.day-col,
+.ls-biggest-jackpots .even td.day-col{
+	width: 33.3%;
+	/*padding: 8px 11px;*/
+	position: relative;
+	z-index: 1;
+}
+.table-type-7-1 tr:hover td.day-col,
+.table-type-7-1 .even td.day-col,
+.blur .ls-best-odds tr:hover td.day-col,
+.blur .ls-best-odds .even td.day-col,
+.blur .ls-biggest-jackpots tr:hover td.day-col,
+.blur .ls-biggest-jackpots .even td.day-col,
+.blur .default-table tr.visible:hover td:first-child{ background: #f9f9f9; }
+/*table-type-7-1 end*/
+/*default table end*/
+
+/*intro*/
+.intro{ padding: 30px 15px 0 0; }
+.intro .video-box{
+	margin: 0 auto 20px;
+	float: none;
+	max-width: 450px;
+}
+.intro-content h2{
+	font: 38px/42px "nunito", Arial, Helvetica, sans-serif;
+	padding: 0 0 10px;
+}
+/*intro end*/
+
+/*main slider*/
+.slide-label .lettering{
+	font-size: 16px;
+	left: -6px;
+	line-height: 20px;
+	top: 30px;
+	width: 100px;
+}
+.slide-label.biggest-jackpot .lettering{
+	font-size: 9px;
+	line-height: 20px;
+}
+.slide-item .slide-label{
+	left: -10px;
+	top: -12px;
+}
+.slide-item .slide-label{
+	width: 100px;
+	height: 100px;
+}
+.slide-item .time-draw{ margin: 0; }
+.slide-item .jackpot-large{
+	font-size: 54px;
+	line-height: 58px;
+	margin: 0 0 10px;
+}
+.slide-item .signals{
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0 0 -8px;
+	padding: 0 120px 0 60px;
+}
+.slide-item .signals > span{
+	height: 18px;
+	max-width: 200px;
+	min-width: 0;
+	overflow: hidden;
+	padding: 5px 15px 30px;
+	position: relative;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.slide-item .lottery-label{
+	bottom: 25px;
+	position: absolute;
+	right: 22px;
+}
+.slide-item .lottery-label{ display: none; }
+.slide-item .time-draw{
+	font-size: 14px;
+	line-height: 18px;
+	max-width: 120px;
+	position: absolute;
+	right: 9px;
+	top: 6px;
+}
+.slide-item .odds{
+	bottom: 8px;
+	font-size: 16px;
+	left: 13px;
+	line-height: 20px;
+	padding: 0;
+	position: absolute;
+}
+.slide-item .slide-buttons{
+	bottom: 8px;
+	margin: 0;
+	position: absolute;
+	right: 8px;
+	text-align: right;
+	width: auto;
+}
+.slide-item .btn-icons{
+	min-width: 100px;
+	padding: 2px 5px;
+}
+.share-list a{
+	margin: 0 0 -20px;
+	padding: 2px 4px 22px;
+}
+.bx-wrapper .bx-controls-direction a{ display: none; }
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{ bottom: -30px; }
+.bx-wrapper .bx-pager.bx-default-pager a{
+	border-radius: 8px;
+	height: 16px;
+	margin: 0 10px;
+	width: 16px;
+}
+/*main slider end*/
+
+/*how work slider*/
+.how-work-slider .slide-wrap{ width: 65%; }
+.how-work-slider .button-wrap{ width: 33%; }
+#how-work-pager a{ font-size: 15px; }
+.how-work-slider .slide-wrap .slide-text{ font-size: 15px; }
+.how-work-slider .button-wrap .open-account{ height: 110px; }
+/*how work slider end*/
+
+/*news box*/
+.news-box .news-large{
+	float: none;
+	width: 100%;
+	padding: 0 0 20px;
+	margin: 0 0 5px;
+}
+.news-box .news-previews{
+	margin: 0 -15px;
+	font-size: 0;
+	letter-spacing: -4px;
+}
+.news-box .news-previews li{
+	font-size: 14px;
+	letter-spacing: normal;
+	width: 50.0%;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	background: none;
+	padding: 0;
+}
+.news-box .news-previews .checker-form{
+	margin: 0 15px;
+	padding: 12px 0 10px;
+}
+.news-box .s3[class*="-list"] > li{ width: 33.3%; }
+/*news box end*/
+
+/*forum page*/
+.container .title-box.alt-title.forum-page h2{
+	float: none;
+	display: block;
+	padding-bottom: 10px;
+	font-size: 24px;
+}
+.user-options.user-login-list{
+	height: 40px;
+	margin: 0 9px 0 0;
+}
+.user-options.user-login-list > li, .user-options.user-login-list > li:first-child{ border-color: #e0e0e0; }
+.user-options.user-login-list > li > a, .user-options.user-login-list > li:first-child > a, .user-options.user-login-list > li:last-child > a{
+	border-radius: 4px;
+	border: 1px solid #e0e0e0;
+	padding: 5px 10px 0;
+}
+.user-options.user-login-list > li > a > img{ margin-top: -2px; }
+.user-login-list .user-options-drop{ margin-top: 0; }
+/*forum page end*/
+
+/*forum profile*/
+.content .forum-profile .aside{
+	display: block;
+	width: 100%;
+}
+.forum-profile .content-holder{
+	float: right;
+	width: 100%;
+}
+.forum-profile .s3[class*="-list"] > li{ width: 33%; }
+/*forum profile end*/
+
+/*elements list*/
+.resources-list{ text-align: center; }
+.resources-list.s5 li{ width: 33.3%; }
+/*elements list end*/
+
+/*contacts*/
+.contacts .contacts-form{
+	float: none;
+	padding: 0 0 30px;
+}
+.contacts .contacts-form .form-holder{ margin: 0; }
+.connect-wrapper{
+	display: block;
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+/*contacts end*/
+
+/*simple*/
+.simple{
+	float: none;
+	width: auto;
+	border-radius: 4px 4px 0 0;
+}
+/*simple end*/
+
+/*register*/
+.register{
+	float: none;
+	width: 554px;
+	margin: 0 auto;
+}
+.register > .holder{ padding: 25px 67px 50px; }
+/*simple list*/
+.simple-list.s3 > li{ width: 33.3%; }
+/*simple list end*/
+/*register end*/
+
+/*game numbers block*/
+.lottery-results .align-left.indent{ margin: 0 20px 0 0 }
+/*game numbers block end*/
+
+/*Lotto Signals page*/
+.how-works [class*="-list"].s4 > li{
+	width: 50%;
+	padding: 34px 0 0;
+}
+.default-table.ls-best-odds td:first-child > div,
+.default-table.ls-biggest-jackpots td:first-child > div{
+	height: auto;
+	border-bottom: 1px solid #d8d8d8;
+}
+.default-table.td5.ls-best-odds td,
+.default-table.td5.ls-biggest-jackpots td{
+	border-bottom: none;
+	vertical-align: top;
+}
+.default-table.td5.ls-best-odds td.day-col,
+.default-table.td5.ls-biggest-jackpots td.day-col,
+.default-table.td5.ls-best-odds tr td:first-child,
+.default-table.td5.ls-biggest-jackpots tr td:first-child{ vertical-align: middle; }
+.members-only-note{ top: 280px; }
+.members-only-note i{
+	width: 400px;
+	background-size: 100% auto;
+	background-position: 0 -250px;
+	height: 170px;
+}
+/*Lotto Signals page end*/
+
+/*Game Number page*/
+.default-table.game-nmber td:first-child > div{ height: auto; }
+.default-table tr.wining td.last-child,
+.default-table tr.wining:hover td.last-child,
+.default-table tr.wining td.last-child:hover,
+.checker-results .default-table tr.wining td.last-child,
+.checker-results .default-table tr.wining:hover td.last-child,
+.checker-results .default-table tr.wining td.last-child:hover{
+	background: #fa3676;
+	color: #fff;
+}
+.default-table tr.wining td,
+.default-table tr.wining:hover td, .default-table tr.wining td:hover,
+.checker-results .default-table tr.wining td,
+.checker-results .default-table tr.wining:hover td,
+.checker-results .default-table tr.wining td:hover{
+	background: none;
+	color: #262626;
+}
+.default-table tr.wining td:first-child,
+.default-table tr:hover td:first-child, .default-table tr td:first-child:hover,
+.checker-results .default-table tr.wining td:first-child,
+.checker-results .default-table tr:hover td:first-child,
+.checker-results .default-table tr td:first-child:hover{
+	background: #f9f9f9;
+	color: #262626;
+}
+tr.wining .icon-midday-a, .wining .icon-morning{ background-position: -10px -545px; }
+tr.wining .icon-midday-a, .wining .icon-midday{ background-position: -10px -501px; }
+tr.wining .icon-midday-a, .wining .icon-night{ background-position: -10px -579px; }
+/*Game Number page end*/
+
+/*Online Lotteries Review*/
+.betting h2{ text-align: left; }
+.compare-item-img{
+	width: 20%;
+	margin-right: 4%;
+}
+.compare-item-descr{ width: 76%; }
+.default-table.ol-reviews td:first-child > div{ text-align: left; }
+.container.ol-review{ padding: 0; }
+.table-type-3-1 .td4.ol-reviews .rating-col, .table-type-3-1 .td4.ol-reviews .deposit-col, .table-type-3-1 .td4.ol-reviews .offered-col{
+	width: 33%;
+	margin-bottom: 48px;
+}
+.table-type-3-1 .td4.ol-reviews tr{ position: relative; }
+.table-type-3-1 .td4.ol-reviews .promotion-col{
+	position: absolute;
+	left: 0;
+	margin-top: 48px;
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #d8d8d8
+}
+.table-type-3-1 .td4.ol-reviews .promotion-col > div{
+	padding: 4px 0;
+	text-align: center
+}
+/*Online Lotteries Review end*/
+
+/*Post Page*/
+.postpage-contentframe{ margin: 0 0 0 33% }
+.postpage-aside{ width: 33% }
+.postpage-banner-1{ width: 100%; }
+/*Post Page end*/
+
+/*Game Number Checker*/
+.designation{
+	clear: left;
+	padding: 20px 0 0;
+}
+.lottery-numbers-wrapper{
+	padding: 10px 0 20px;
+	margin: 0;
+}
+.lottery-numbers-wrapper ul.lottery-numbers{
+	padding-bottom: 0;
+	margin: 0;
+}
+.box.days-types ul li.group-title{ width: 50px; }
+.lottery-results .align-left.indent{
+	float: none;
+	padding: 0 0 20px;
+}
+.number-checker-form .form-buttons.gn-hecker .btn-frame-blue-large{ margin: 10px 8px 30px; }
+/*Game Number Checker end*/
+
+/*Number Checkers Page*/
+.numcheck-nav-bar .float-right-block input#s1{ width: 150px; }
+/*Number Checkers Page end*/
+
+/*Lottery Jackpots*/
+.container .table-wrap.lottery-jackpots td.game-col{ width: auto }
+.container .table-wrap.lottery-jackpots td.game-col span{
+	font-weight: bold;
+	margin-right: 20px;
+}
+.container .table-wrap.lottery-jackpots td.game-col br{ display: none }
+.container .table-wrap.lottery-jackpots td.jackpot{ width: 50% }
+/*Lottery Jackpots end*/
+
+/*The Lotter*/
+.logotype-lottery-img, .deal-img{ text-align: left }
+/*The Lotter end*/
+
+/*lotto card*/
+.lotto-card-item .lottery-numbers.lgst-size li:nth-child(5){ padding: 5px 15px 5px 0; }
+/*lotto card end*/
+
+/*article*/
+.article{ padding: 0 0 26px; }
+.article .article-box{
+	float: none;
+	padding: 0 0 27px;
+	width: auto;
+}
+.article-text .holder{ padding-top: 0; }
+.article-img-wrapper{ margin: 0 auto; }
+.article .article-img img{
+	display: block;
+	margin: 0 auto;
+}
+/*article end*/
+
+/*large counter*/
+.large-counter h2{
+	font-size: 28px;
+	line-height: 38px;
+}
+.large-counter .counter{
+	font-size: 130px;
+	line-height: 150px;
+}
+/*large counter end*/
+
+/*checker*/
+.checker-form .form-holder{
+	width: auto;
+	float: none;
+	margin-right: -19px;
+}
+.checker-form .form-buttons{
+	margin: 0;
+	padding: 0 0 5px;
+}
+.checker-form .form-buttons > .holder .btn-default-largest.btn-check-results{
+	font-size: 26px;
+	line-height: 30px;
+	padding: 8px 25px;
+}
+.checker{ padding: 13px 16px 12px; }
+.checker .default-table{ border-radius: 4px; }
+/*checker end*/
+
+/*player reviews*/
+.player-review-content .likes{
+	width: auto;
+	margin: 0 15px 0 0;
+	padding: 0 20px;
+}
+.player-review-content .likes > div{
+	float: none;
+	padding: 0 0 15px;
+	display: block;
+}
+/*player reviews end*/
+
+/*map area*/
+.map-area{
+	margin: 0;
+	padding: 0;
+}
+#map{ display: none; }
+/*states select*/
+.states-select{ visibility: visible; }
+/*states select end*/
+/*map area end*/
+
+/*selects area*/
+.selects-area .form-row{ padding-right: 5%; }
+/*selects area end*/
+
+/*logotype top*/
+.logotype-top{
+	float: left;
+	width: 270px;
+	height: 180px;
+}
+.logotype-top .logotype-lottery-img{ text-align: center; }
+/*logotype top end*/
+
+.container .title-box.tagged .alt-title-holder h2{ font-size: 22px; }
+.mag-intro-nav-bar ul{ display: none; }
+.mag-intro-nav-bar .select-holder{ display: block; }
+.manager-list.s5 > li{ width: 33.3%; }
+/*footer*/
+.footer-holder{
+	padding: 21px 10px 0;
+	margin: 0 0 -25px;
+}
+.footer-box:first-child{ width: 30%; }
+.footer-nav{ width: 20%; }
+.footer-social{ width: 20%; }
+.footer-partners{ width: 20%; }
+.partners-list{ padding: 0 0 18px; }
+.footer-logo{ margin-bottom: 18px; }
+.footer-nav-list{
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-nav-list li{
+	display: block;
+	text-align: left;
+	padding-bottom: 10px;
+}
+.partners-list li{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.footer .social-list li{
+	display: block;
+	vertical-align: top;
+	padding: 26px 0 0;
+	text-align: center;
+}
+.footer .social-list li:first-child{ padding-top: 0; }
+.footer .social-list li a{ margin: 0 auto; }
+.copyright{ padding-left: 10px; }
+/*footer end*/
+
+.select-item .choose-game .add-game{
+	margin-right: -20px;
+	position: relative;
+	right: auto;
+}
+.selects-area .form-row.row-full > .w1{ width: 90%; }
+.checker-form .view-game-holder .w2,
+.checker-form .view-game-holder .w3{
+	float: none;
+	width: auto;
+}
+.recent-news-list.s2 li{ width: 50%; }
+.free-lines-drop .default-table tr:hover td{
+	background: #f9f9f9;
+}
+.free-lines-drop .default-table tr td:first-child{
+	border: none;
+}

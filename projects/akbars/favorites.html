@@ -1,0 +1,1981 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>АБН - Избранное</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+
+<!-- main style -->
+<link href="css/all.css" rel="stylesheet" media="screen">
+
+<!-- style for IE -->
+<!--[if gte IE 9]><link rel="stylesheet" href="css/ie9.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" media="screen, projection"><![endif]-->
+
+<!-- jquery library -->
+<script src="js/jquery-1.8.2.min.js"></script>
+<!-- ui -->
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<!-- widgets -->
+<script src="js/widgets.js"></script>
+<!-- main functions -->
+<script src="js/functions.js"></script>
+<!-- Yandex map -->
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- object search -->
+	<div class="object-search fixed">
+		<div class="object-search-holder">
+			<!-- max-wrap -->
+			<div class="max-wrap">
+				<!-- alternative logo -->
+				<strong class="alt-logo">
+					<a href="#">
+						<strong class="logo-link"><span>на главную</span></strong>
+						ДОН АК Барс Недвижимость
+					</a>
+				</strong>
+				<!-- alternative logo end -->
+				
+				<!-- tabs wrap -->
+				<div class="tabs-wrap">
+					<!-- tab controls -->
+					<div class="tab-controls-holder">
+						<ul class="tab-controls">
+							<li class="active"><a href="#">Квартиры<i class="corner-tab"></i></a></li>
+							<li><a href="#">Дома и участки<i class="corner-tab"></i></a></li>
+							<li><a href="#">Коммерческая недвижимость<i class="corner-tab"></i></a></li>
+						</ul>
+					</div>
+					<!-- tab controls end -->
+					
+					<!-- map drop -->
+					<div class="map-drop">
+						<div class="map-wrap">
+							<!-- map -->
+							<div class="map" data-left="55.785793" data-right="49.106585" data-zoom="10"></div>
+							<!-- map end -->
+						</div>
+						<a href="#" class="btn btn-open-map"><i class="icon-pin"></i>Смотреть объекты на карте</a>
+						<a href="#" class="btn btn-close-map">Свернуть карту</a>
+					</div>
+					<!-- map drop end -->
+					
+					<!-- tabs -->
+					<div class="tabs">
+						<div class="tab">
+							<!-- filter form -->
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box in-first-col">
+													<span class="label">Количество комнат</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-flat-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-flat-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-flat-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-flat-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-flat-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="40" id="area-flat-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-flat-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="356" id="area-flat-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="filter-row">
+												<div class="filter-box in-first-col">
+													<span class="label">Статус дома</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Сдан</option>
+																<option value="2">option 1</option>
+																<option value="3">option 2</option>
+																<option value="4">option 3</option>
+																<option value="5">option 4</option>
+																<option value="6">option 5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-complex">
+													<span class="label">Комплекс</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district">
+													<span class="label">Район</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать квартиры</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- filter form end -->
+						</div>
+						
+						<div class="tab">
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь дома</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-house-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-house-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-house-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-house-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-village">
+													<span class="label">Поселок</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district">
+													<span class="label">Район</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь участка</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-land-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-land-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-land-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-land-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-land-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-land-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-land-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-land-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать дома и участки</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						
+						<div class="tab">
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-property-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-property-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-property-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-property-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-property-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-property-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-property-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-property-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district-short">
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+													<span class="label">Район</span>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать объекты</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- tabs end -->
+				</div>
+				<!-- tabs wrap end -->
+			</div>
+			<!-- max-wrap -->
+		</div>
+		
+		<!-- find object -->
+		<div class="find-object">
+			<a href="#" class="btn btn-find-object"><i class="arrow-open"></i>подобрать квартиру</a>
+		</div>
+		<!-- find object end -->
+	</div>
+	<!-- object search end -->
+	
+	<!-- header -->
+	<header class="header">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- header holder -->
+			<div class="header-holder">
+				<!-- logo -->
+				<strong class="logo">
+					<a href="#">
+						<strong class="logo-link"><span>на главную</span></strong>
+						ДОН АК Барс Недвижимость
+					</a>
+				</strong>
+				<!-- logo end -->
+				
+				<!-- user links -->
+				<ul class="user-links-list">
+					<li><a href="#"><i class="icon-view-gray"></i>вы смотрели</a></li>
+					<li>
+						<a href="#" title="Добавляйте квартиры в избранное и вы всегда сможете найти их по этой ссылке."><i class="icon-flats-gray"></i>избранные квартиры</a>
+						<span class="added-flats">13 квартир добавлено</span>
+						<!-- added flats box -->
+						<div class="added-flats-box">
+							<ul class="added-flats-list">
+								<li>
+									<a href="#">
+										<strong class="name">XXI век</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+							</ul>
+							<div class="complete-list">
+								<a href="#">Перейти к полному списку</a>
+							</div>
+						</div>
+						<!-- added flats box end -->
+					</li>
+				</ul>
+				<!-- user links end -->
+				
+				<!-- callback -->
+				<div class="callback-holder">
+					<a href="#" class="btn btn-default callback">Заказать звонок</a>
+				</div>
+				<!-- callback end -->
+				
+				<!-- phone -->
+				<div class="phone-wrap">
+					<strong class="phone"><i class="icon-call"></i><span class="phone-code">8 (843)</span> 295-77-77</strong>
+					<!-- social networks -->
+					<ul class="social-networks">
+						<li><a href="https://twitter.com/ABNsale" class="soc-icon-twitter" target="_blank">twitter</a></li>
+						<li><a href="https://www.facebook.com/akBarsNedvizimost" class="soc-icon-facebook" target="_blank">facebook</a></li>
+						<li><a href="http://vk.com/akbarsnedvizimost" class="soc-icon-vk" target="_blank">vk</a></li>
+						<li><a href="http://www.youtube.com/user/AkBarsDevelopment?feature=CBAQwRs%3D" class="soc-icon-youtube" target="_blank">youtube</a></li>
+					</ul>
+					<!-- social networks end -->
+				</div>
+				<!-- phone end -->
+			</div>
+			<!-- header holder end -->
+			
+			<!-- main navigation -->
+			<div class="nav-box">
+				<div class="max-wrap">
+					<nav class="nav">
+						<!-- navigation list -->
+						<ul class="nav-list">
+							<li><a href="#">главная</a></li>
+							<li class="active"><a href="#">О компании</a>
+								<div class="sub-nav">
+									<ul>
+										<li><a href="#">Главное</a></li>
+										<li><a href="#">Команда</a></li>
+										<li><a href="#">Отзывы</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Все объекты</a></li>
+							<li><a href="#">Формы оплаты</a></li>
+							<li><a href="#">акции</a></li>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<!-- navigation list end -->
+						
+						<!-- search form -->
+						<div class="search-form">
+							<form action="#" method="get">
+								<fieldset>
+									<div class="search-holder">
+										<div class="input-holder-wrap">
+											<div class="input-holder">
+												<input type="text" placeholder="Квартира">
+											</div>
+											<div class="btn sbm-search">
+												<i class="icon-magnifier-green"></i>
+												<input type="submit" value="">
+											</div>
+											<a href="#" class="btn-search-close"><i class="icon-close-form"></i></a>
+										</div>
+										<a href="#" class="submit-search"><i class="icon-magnifier"></i>поиск</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<!-- search form end -->
+					</nav>
+				</div>
+			</div>
+			<!-- main navigation end -->
+		</div>
+		<!-- max-wrap end -->
+	</header>
+	<!-- header end -->
+	
+	<!-- main divider -->
+	<div class="main-divider">
+		<div class="main-divider-holder">
+			<img src="pic/img-intro.jpg" width="1900" height="520" alt="image description">
+		</div>
+	</div>
+	<!-- main divider end -->
+	
+	<!-- main -->
+	<div class="main">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- main holder -->
+			<div class="main-holder">
+				<h1>Избранное</h1>
+				<!-- text description -->
+				<div class="text-description">
+					<a href="#" class="btn btn-red">Перейти в каталог</a>
+					<div class="text-description-holder">
+						<p>В феврале 2011 года для удобства покупателей была создана компания <a href="#">«АК БАРС Недвижимость»</a>, которая объединила в единую структуру продажи крупнейших жилых комплексов и ряд «точечных» новостроек. </p>
+					</div>
+				</div>
+				<!-- text description end -->
+				
+				<!-- realty -->
+				<div class="realty">
+					<!-- paging option -->
+					<div class="paging-option">
+						<!-- paging -->
+						<ul class="paging">
+							<li class="prev"><a href="#"><i class="arrow-prev-slider"></i></a></li>
+							<li class="current-page"><span>1</span></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li class="next"><a href="#"><i class="arrow-next-slider"></i></a></li>
+						</ul>
+						<!-- paging end -->
+						
+						<!-- view items -->
+						<div class="view-items">
+							<div class="label-holder">
+								<label for="view-items">Показать на странице:</label>
+							</div>
+							<div class="select-holder">
+								<div class="bselect">
+									<select class="cselect view-items-select" id="view-items">
+										<option value="1">40</option>
+										<option value="2">10</option>
+										<option value="3">20</option>
+										<option value="4">30</option>
+										<option value="5">50</option>
+										<option value="6">60</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- view items end -->
+					</div>
+					<!-- paging option -->
+					
+					<!-- objects table -->
+					<table class="objects-table def-table">
+						<thead>
+							<tr>
+								<th>Жилой комплекс</th>
+								<th>Количество комнат</th>
+								<th>Площадь, м2</th>
+								<th>Этаж</th>
+								<th>Номер квартиры</th>
+								<th>Улица</th>
+								<th>Дом</th>
+								<th>Срок сдачи</th>
+								<th>Стоимость, р.</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>XXI век</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+								<td class="del-col"><i class="icon-delete-row"></i></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- objects table end -->
+					
+					<!-- paging option -->
+					<div class="paging-option">
+						<!-- paging -->
+						<ul class="paging">
+							<li class="prev"><a href="#"><i class="arrow-prev-slider"></i></a></li>
+							<li class="current-page"><span>1</span></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li class="next"><a href="#"><i class="arrow-next-slider"></i></a></li>
+						</ul>
+						<!-- paging end -->
+						
+						<!-- view items -->
+						<div class="view-items">
+							<div class="label-holder">
+								<label for="view-items-bottom">Показать на странице:</label>
+							</div>
+							<div class="select-holder">
+								<div class="bselect">
+									<select class="cselect view-items-select" id="view-items-bottom">
+										<option value="1">40</option>
+										<option value="2">10</option>
+										<option value="3">20</option>
+										<option value="4">30</option>
+										<option value="5">50</option>
+										<option value="6">60</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- view items end -->
+						
+						<!-- list reset -->
+						<div class="list-reset">
+							<a href="#" class="btn btn-default">Очистить список избранных</a>
+						</div>
+						<!-- list reset end -->
+					</div>
+					<!-- paging option -->
+				</div>
+				<!-- realty end -->
+				
+				<!-- additional information -->
+				<aside class="add-info">
+					<!-- promo area -->
+					<div class="promo-area">
+						<!-- favorites offers -->
+						<div class="favorites-offers">
+							<ul class="slider-list">
+								<li>
+									<!-- favorites offers descriprion -->
+									<div class="favorites-offers-descriprion">
+										<strong class="title"><span class="title-holder">Избранные предложения</span></strong>
+										<strong class="logotype-lend-market"><a href="#">Ленд Маркет</a></strong>
+										<span class="address">
+											2 комнаты, 54 м2<br>
+											г. Казань,<br>
+											ул. Космонавтов, 46
+										</span>
+										<span class="cost">2 100 000 руб.-</span>
+										<a href="#" class="btn btn-default">Подробнее</a>
+									</div>
+									<!-- favorites offers descriprion end -->
+									
+									<!-- favorites offers image -->
+									<div class="favorites-offers-img">
+										<img src="pic/slider-favorite/img-01.jpg" width="295" height="312" alt="image description">
+									</div>
+									<!-- favorites offers image end -->
+								</li>
+								<li>
+									<div class="favorites-offers-descriprion">
+										<strong class="title"><span class="title-holder">Избранные предложения</span></strong>
+										<strong class="logotype-lend-market">Ленд Маркет</strong>
+										<span class="address">
+											2 комнаты, 54 м2<br>
+											г. Казань,<br>
+											ул. Космонавтов, 46
+										</span>
+										<span class="cost">2 100 000 руб.-</span>
+										<a href="#" class="btn btn-default">Подробнее</a>
+									</div>
+									<div class="favorites-offers-img">
+										<img src="pic/slider-favorite/img-02.jpg" width="295" height="312" alt="image description">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- favorites offers end -->
+						
+						<!-- promo slider -->
+						<div class="promo-slider">
+							<ul class="slider-list">
+								<li>
+									<!-- promo slider image -->
+									<div class="promo-slider-img">
+										<img src="pic/slider-promo/img-01.jpg" width="492" height="317" alt="image description">
+									</div>
+									<!-- promo slider image end -->
+									
+									<!-- promo slider descriprion -->
+									<div class="promo-slider-descriprion">
+										<strong class="title">Одна квартира —<br> в одни руки!</strong>
+										<div class="label-logotype">
+											<div class="label-logotype-holder">
+												<strong class="logotype-kazan"><a href="#">Казань ХХI век жилой комплекс</a></strong>
+											</div>
+										</div>
+										<div class="promo-slider-text">
+											<p>Описание рекламного сообщения, коротко, самая выгода.</p>
+										</div>
+										<strong class="phone"><i class="icon-call-left"></i>8 843 295-77-77</strong>
+									</div>
+									<!-- promo slider descriprion end -->
+								</li>
+								<li>
+									<!-- promo slider image -->
+									<div class="promo-slider-img">
+										<img src="pic/slider-promo/img-02.jpg" width="492" height="317" alt="image description">
+									</div>
+									<!-- promo slider image end -->
+									
+									<!-- promo slider descriprion -->
+									<div class="promo-slider-descriprion">
+										<strong class="title">(Slider 2) Одна квартира —<br> в одни руки!</strong>
+										<div class="label-logotype">
+											<div class="label-logotype-holder">
+												<strong class="logotype-kazan"><a href="#">Казань ХХI век жилой комплекс</a></strong>
+											</div>
+										</div>
+										<div class="promo-slider-text">
+											<p>(Slider 2) Описание рекламного сообщения, коротко, самая выгода.</p>
+										</div>
+										<strong class="phone"><i class="icon-call-left"></i>8 843 295-77-77</strong>
+									</div>
+									<!-- promo slider descriprion end -->
+								</li>
+							</ul>
+						</div>
+						<!-- promo slider end -->
+					</div>
+					<!-- promo area end -->
+					
+					<!-- objects -->
+					<div class="objects">
+						<h2><a href="#">Наши объекты</a></h2>
+						<p>Сегодня Казань — один из активно развивающихся и строящихся городов в России. Причин этому много. </p>
+						<!-- objects list -->
+						<ul class="objects-list">
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup2" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup3" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="objects-item">
+									<img src="pic/objects/object-03.jpg" width="316" height="85" alt="image description">
+									<div class="objects-description">
+										<div class="objects-holder">
+											<div class="label-logotype">
+												<div class="label-logotype-holder">
+													<strong class="logotype-lend-market">Ленд Маркет</strong>
+												</div>
+											</div>
+											<a href="#card-popup" class="btn btn-more btn-default card-popup-link">Подробнее</a>
+											<span class="objects-title">Жилой комплекс «Казань XXI век»</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- objects list end -->
+						<a href="#" class="btn btn-default btn-view-all">Посмотреть все объекты</a>
+					</div>
+					<!-- objects end -->
+				</aside>
+				<!-- additional information -->
+			</div>
+			<!-- main holder end -->
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- main end -->
+	
+	<!-- spacer -->
+	<div class="spacer"></div>
+	<!-- spacer -->
+</div>
+<!-- wrapper end -->
+
+<!-- footer -->
+<footer class="footer">
+	<!-- footer top -->
+	<div class="footer-top">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- logo in footer -->
+			<strong class="footer-logo"><a href="#">ДОН АК Барс Недвижимость</a></strong>
+			<!-- logo in footer end -->
+			
+			<!-- navigation bar -->
+			<ul class="nav-bar-list">
+				<li>
+					<strong><a href="#">Поиск квартир</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">О компании</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Все объекты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Формы оплаты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Пресс-центр</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">контакты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- navigation bar end -->
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- footer top end -->
+	
+	<!-- footer bottom -->
+	<div class="footer-bottom">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- callback -->
+			<div class="callback-holder">
+				<a href="#" class="btn btn-default callback">Заказать звонок</a>
+			</div>
+			<!-- callback end -->
+			<strong class="phone"><i class="icon-call"></i><span class="phone-code">8 (843)</span> 295-77-77</strong>
+			<div class="footer-bottom-text">
+				<p><a href="#">«AkBars»</a> 2006-2014</p>
+			</div>
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- footer bottom end -->
+</footer>
+<!-- footer end -->
+
+<!-- callback form -->
+<div class="callback-form">
+	<a href="#" class="btn-close">close</a>
+	<form action="#" method="get">
+		<fieldset>
+			<strong class="title">Заказать звонок менеджера</strong>
+			<div class="form-line">
+				<div class="input-holder">
+					<input type="text" placeholder="Ваше имя" name="callback_form_name">
+				</div>
+			</div>
+			<div class="form-line">
+				<div class="input-holder">
+					<input type="text" placeholder="Ваше телефон" name="callback_form_phone">
+				</div>
+			</div>
+			<div class="submit-holder">
+				<div class="btn btn-green">
+					<span>Перезвоните мне</span>
+					<input type="submit" value="">
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- callback form end -->
+
+<!-- callback confirm -->
+<div class="callback-confirm">
+	<a href="#" class="btn-close">close</a>
+	<strong class="title">Спасибо!<br> Заявка отправлена.</strong>
+	<span class="icon-confirm"></span>
+	<div class="close-link">
+		<a href="#" class="close">закрыть</a>
+	</div>
+</div>
+<!-- callback confirm end -->
+
+<!-- popup -->
+<div class="popup-holder">
+	<!-- calculator form -->
+	<div id="calculator-popup" class="mortgage-calculator">
+		<!-- calculator form -->
+		<div class="calculator-form">
+			<h2>Ипотечный калькулятор</h2>
+			<!-- calculator info -->
+			<div class="calculator-info">
+				<p>Вы выбрали 1-комнатную квартиру, площадью от 43,26 кв.м. стоимостью 2 201 934 рублей в Семейном микрорайоне «Солнечный город».</p>
+			</div>
+			<!-- calculator info end -->
+			
+			<!-- calculator note -->
+			<div class="calculator-note">
+				<p>Калькулятор «Расчет ежемесячного платежа» поможет выбрать подходящую ипотечную программу, рассчитать ежемесячный платеж и общую сумму выплат по кредиту.</p>
+			</div>
+			<!-- calculator note end -->
+			
+			<!-- options calculator -->
+			<div class="options-calculator">
+				<div class="form-line">
+					<div class="label-holder">
+						<span class="label">Регион</span>
+					</div>
+					<div class="description-holder">
+						<span class="text">Республика Татарстан</span>
+					</div>
+				</div>
+				<div class="form-line">
+					<div class="label-holder">
+						<span class="label">Вед недвижимости</span>
+					</div>
+					<div class="description-holder">
+						<div class="select-holder">
+							<div class="bselect">
+								<select class="cselect">
+									<option value="1">Готовая жилая недвижимость</option>
+									<option value="2">select 1</option>
+									<option value="3">select 2</option>
+									<option value="4">select 3</option>
+									<option value="5">select 4</option>
+									<option value="6">select 5</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-line">
+					<div class="label-holder">
+						<span class="label">Стоимость недвижимости</span>
+					</div>
+					<div class="description-holder">
+						<strong class="object-cost">2 201 934 руб.</strong>
+					</div>
+				</div>
+				<div class="form-line">
+					<div class="label-holder">
+						<label for="initial-fee">Первоначальный взнос*</label>
+					</div>
+					<div class="description-holder">
+						<div class="input-holder">
+							<input type="text" placeholder="" id="initial-fee">
+							<span class="unit">р.</span>
+						</div>
+						<span class="period"><i class="corner-period"></i> От <b>220 193,4</b> до <b>1 541 353,8</b> руб.</span>
+					</div>
+				</div>
+				<div class="form-line">
+					<div class="label-holder">
+						<span class="label">Вед недвижимости</span>
+					</div>
+					<div class="description-holder">
+						<div class="select-holder">
+							<div class="bselect">
+								<select class="cselect">
+									<option value="1">20 лет</option>
+									<option value="2">25 лет</option>
+									<option value="3">30 лет</option>
+									<option value="4">35 лет</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="divider"></span>
+			</div>
+			<!-- options calculator end -->
+			
+			<!-- check list -->
+			<ul class="check-list">
+				<li>
+					<label class="check">
+						<input class="def-ch" type="checkbox">
+						У меня есть положительная кредитная история в «АК БАРС» Банке.
+					</label>
+				</li>
+				<li>
+					<label class="check">
+						<input class="def-ch" type="checkbox">
+						Я являюсь держателем зарплатной карты «АК БАРС» Банка.
+					</label>
+				</li>
+			</ul>
+			<!-- check list end -->
+			<span class="notice">* – Поля, обязательные для заполнения</span>
+			<a href="#" class="btn btn-red btn-calculate">Рассчитать ипотеку</a>
+		</div>
+		<!-- calculator form -->
+		
+		<!-- result of calculation -->
+		<div class="result-calculation">
+			<i class="corner-calculator"></i>
+			<h2>Результат расчета</h2>
+			<!-- result price -->
+			<div class="result-price-holder">
+				<div class="result-price">
+					<strong class="result-price-title">Сумма кредита</strong>
+					<strong class="result-price-value">2 201 934 руб.</strong>
+				</div>
+			</div>
+			<!-- result price end -->
+			
+			<span class="result-note">Вам подойдут следующие ипотечные программы:</span>
+			<!-- mortgage programs -->
+			<table class="def-table mortgage-programs">
+				<thead>
+					<tr>
+						<th>Название</th>
+						<th>Ставка</th>
+						<th>Ежемесячный платеж</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>АК БАРС - Мегаполис</td>
+						<td>12,5 %</td>
+						<td>21 650 руб.</td>
+					</tr>
+					<tr>
+						<td>Название второй программы</td>
+						<td>12,5 %</td>
+						<td>21 650 руб.</td>
+					</tr>
+					<tr>
+						<td>Название третьей программы</td>
+						<td>12,5 %</td>
+						<td>21 650 руб.</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- mortgage programs end -->
+			
+			<!-- additional info -->
+			<div class="additional-info">
+				<div class="caption">
+					<p>Если Вас устраивают условия кредитования,<br> <a href="#"><b>заполните форму для получения информации о наличии квартир.</b></a></p>
+				</div>
+				<p>Выплата ипотечного кредита производится равными платежами в течение всего срока.</p>
+				<p><b>Внимание!</b> Расчет калькулятора является предварительными может быть неточным по техническим причинам. Для выяснения достоверной информации по условиям соответствующей услуги Банка необходимо руководствоваться данными, изложенными на сайте банка, обратиться по телефонам:</p>
+				<ul class="phones-list">
+					<li><b>8-800-2005-303</b> (бесплатный звонок по России);</li>
+					<li><b>8 (843) 2-303-303</b> (в Казани).</li>
+				</ul>
+				<p>или получить информацию на стендах в помещениях Банка при личном посещении.</p>
+				<p>Расчеты калькулятора действительны только для физических лиц. Если вы индивидуальный предприниматель и хотите подобрать ипотечную программу, обратитесь в отделение Банка в вашем городе.</p>
+			</div>
+			<!-- additional info end -->
+			
+			<a href="#" class="btn btn-green btn-request">Оформить заявку на ипотеку</a>
+		</div>
+		<!-- result of calculation end -->
+	</div>
+	<!-- calculator form end -->
+	
+	<!-- card popups -->
+	<div id="card-popup" class="card-popup">
+		<!-- card link -->
+		<div class="card-link"><a href="#">Жилой комплекс “Берег”</a></div>
+		<!-- card link end -->
+		
+		<!-- card heading -->
+		<div class="card-heading">
+			<div class="print"><a href="#"><i class="icon-print"></i><span class="text">Распечатать</span></a></div>
+			<h2>Ул. Мусина, д.1, кв.3</h2>
+		</div>
+		<!-- card heading end -->
+		
+		<!-- card holder -->
+		<div class="card-holder">
+			<!-- card content wrapper -->
+			<div class="card-content-wrap">
+				<!-- card content -->
+				<div class="card-content">
+					<!-- card price -->
+					<div class="card-price">
+						<ul class="card-price-list">
+							<li>2-комнатная</li>
+							<li>62,6 м<sup>2</sup></li>
+							<li><b>4 945 000 р.</b></li>
+						</ul>
+					</div>
+					<!-- card price end -->
+					
+					<!-- card info -->
+					<div class="card-info">
+						<!-- card info box -->
+						<div class="card-info-box">
+							<div class="col">
+								<h3>Фотогалерея</h3>
+								<!-- card gallery -->
+								<div class="card-gallery">
+									<!-- object photo -->
+									<div class="large-img">
+										<a href=""><img src="pic/objects-card/large/img-01.jpg" width="344" height="238" alt="image description"></a>
+									</div>
+									<!-- object photo end -->
+									
+									<!-- card preview -->
+									<div class="card-preview">
+										<ul class="card-preview-list">
+											<li class="active">
+												<a href="pic/objects-card/large/img-01.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/objects-card/large/img-02.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/objects-card/large/img-03.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+										</ul>
+									</div>
+									<!-- card preview end -->
+								</div>
+								<!-- card gallery end -->
+							</div>
+							<div class="col">
+								<h3>Расположение квартиры в доме</h3>
+								<!-- locate apartment -->
+								<div class="locate-apartment">
+									<img src="pic/locate-apartament/img-01.jpg" width="344" height="238" alt="image description">
+								</div>
+								<!-- locate apartment end -->
+							</div>
+						</div>
+						<!-- card info box end -->
+						
+						<!-- card info box -->
+						<div class="card-info-box">
+							<div class="col">
+								<!-- card feature -->
+								<dl class="card-feature">
+									<dt>Статус дома</dt><dd><span>Сдан</span></dd>
+									<dt>Квартира</dt><dd><span>3</span></dd>
+									<dt>Этаж/этажность</dt><dd><span>3/5</span></dd>
+									<dt>Количество комнат</dt><dd><span>2</span></dd>
+									<dt>Общая площадь</dt><dd><span>62,6</span></dd>
+									<dt>Жилая площадь, м2</dt><dd><span>39,3</span></dd>
+									<dt>Площадь кухни, м2</dt><dd><span>6,4</span></dd>
+									<dt>Текущая стоимость, руб./м2</dt><dd><span>79 000</span></dd>
+									<dt>Срок сдачи дома</dt><dd><span>12.11.2015</span></dd>
+									<dt>Статус квартиры</dt><dd><span>Открыт в продажу</span></dd>
+								</dl>
+								<!-- card feature end -->
+							</div>
+							<div class="col">
+								<h3>Общее описание</h3>
+								<!-- card description -->
+								<div class="card-description">
+									<p>Социальная ориентированность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориентированность жилых комплексов. Наши комплексы сдаются  сдаютсяс построенными школами, детскими садами. Социальная ориентированность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориентированность жилых комплексов.</p>
+								</div>
+								<p>Информация о наличии парковки.</p>
+								<!-- card description end -->
+							</div>
+						</div>
+						<!-- card info box end -->
+						
+						<!-- card options -->
+						<ul class="card-options-list">
+							<li>
+								<a href="#" class="btn btn-default"><i class="icon-plus"></i><span class="text">Добавить в избранное</span></a>
+							</li>
+							<li>
+								<a href="#" class="btn btn-default"><i class="icon-pin-light-green"></i><span class="text">Смотреть на карте города</span></a>
+							</li>
+						</ul>
+						<!-- card options end -->
+					</div>
+					<!-- card info end -->
+					
+					<!-- purchase -->
+					<div class="purchase">
+						<h3>Как купить эту квартиру</h3>
+						<!-- purchase list -->
+						<div class="purchase-list">
+							<ul class="dott-list">
+								<li><a href="#">100% оплата (скидка 5%, в том числе и по ипотеке)*</a></li>
+								<li><a href="#">Рассрочка 10 мес. с п. вз. 70%**</a></li>
+								<li><a href="#">Рассрочка 10 мес. с п. вз. 50%***</a></li>
+							</ul>
+						</div>
+						<!-- purchase list end -->
+					</div>
+					<!-- purchase end -->
+					
+					<!-- card buttons -->
+					<ul class="card-buttons">
+						<li><a href="#" class="btn btn-orange calculator-popup-inner">Рассчитать ипотеку</a></li>
+						<li><a href="#" class="btn btn-green callback">Мне интересно, позвоните мне</a></li>
+					</ul>
+					<!-- card buttons end -->
+				</div>
+				<!-- card content end -->
+			</div>
+			<!-- card content wrapper end -->
+			
+			<!-- card aside -->
+			<aside class="card-aside">
+				<div class="aside-widget">
+					<div class="card-aside-img">
+						<img src="pic/objects/object-05.jpg" width="177" height="119" alt="image description">
+					</div>
+					<h3>Жилой комплекс “Берег”</h3>
+					<p>Социальная ориенти- рованность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориен- тированность жилых комплексов.</p>
+					<!-- benefits list -->
+					<ul class="benefits-list">
+						<li>Преимущество один</li>
+						<li>Преимущество два</li>
+						<li>Преимущество три</li>
+					</ul>
+					<!-- benefits list end -->
+					<h4>Сайт комплекса:</h4>
+					<p><a href="mailto:www.akbars-dom.ru">www.akbars-dom.ru</a></p>
+					<div class="view-plan">
+						<a href="#" class="btn btn-default">Смотреть генеральный план</a>
+					</div>
+					<p>Проект реализуется в соответствии с ФЗ 214. Застройщик: Такой-то</p>
+					<p><a href="#">Проектная декларация</a></p>
+				</div>
+			</aside>
+			<!-- card aside -->
+		</div>
+		<!-- card holder end -->
+	</div>
+	
+	<div id="card-popup2" class="card-popup">
+		<!-- card link -->
+		<div class="card-link"><a href="#">Жилой комплекс “Берег”</a></div>
+		<!-- card link end -->
+		
+		<!-- card heading -->
+		<div class="card-heading">
+			<div class="print"><a href="#"><i class="icon-print"></i><span class="text">Распечатать</span></a></div>
+			<h2>Ул. Мусина, д.1, кв.3</h2>
+		</div>
+		<!-- card heading end -->
+		
+		<!-- card holder -->
+		<div class="card-holder">
+			<!-- card content wrapper -->
+			<div class="card-content-wrap">
+				<!-- card content -->
+				<div class="card-content">
+					<!-- card price -->
+					<div class="card-price">
+						<ul class="card-price-list">
+							<li>2-комнатная</li>
+							<li>62,6 м<sup>2</sup></li>
+							<li><b>4 945 000 р.</b></li>
+						</ul>
+					</div>
+					<!-- card price end -->
+					
+					<!-- card info -->
+					<div class="card-info">
+						<!-- card info box -->
+						<div class="card-info-box">
+							<div class="col">
+								<h3>Фотогалерея</h3>
+								<!-- card gallery -->
+								<div class="card-gallery">
+									<!-- object photo -->
+									<div class="large-img">
+										<a href=""><img src="pic/objects-card/large/img-01.jpg" width="344" height="238" alt="image description"></a>
+									</div>
+									<!-- object photo end -->
+									
+									<!-- card preview -->
+									<div class="card-preview">
+										<ul class="card-preview-list">
+											<li class="active">
+												<a href="pic/objects-card/large/img-01.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/objects-card/large/img-02.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/objects-card/large/img-03.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+										</ul>
+									</div>
+									<!-- card preview end -->
+								</div>
+								<!-- card gallery end -->
+							</div>
+							<div class="col">
+								<h3>Расположение квартиры в доме</h3>
+								<!-- locate apartment -->
+								<div class="locate-apartment">
+									<img src="pic/locate-apartament/img-01.jpg" width="344" height="238" alt="image description">
+								</div>
+								<!-- locate apartment end -->
+							</div>
+						</div>
+						<!-- card info box end -->
+						
+						<!-- card info box -->
+						<div class="card-info-box">
+							<div class="col">
+								<!-- card feature -->
+								<dl class="card-feature">
+									<dt>Статус дома</dt><dd><span>Сдан</span></dd>
+									<dt>Квартира</dt><dd><span>3</span></dd>
+									<dt>Этаж/этажность</dt><dd><span>3/5</span></dd>
+									<dt>Количество комнат</dt><dd><span>2</span></dd>
+									<dt>Общая площадь</dt><dd><span>62,6</span></dd>
+									<dt>Жилая площадь, м2</dt><dd><span>39,3</span></dd>
+									<dt>Площадь кухни, м2</dt><dd><span>6,4</span></dd>
+									<dt>Текущая стоимость, руб./м2</dt><dd><span>79 000</span></dd>
+									<dt>Срок сдачи дома</dt><dd><span>12.11.2015</span></dd>
+									<dt>Статус квартиры</dt><dd><span>Открыт в продажу</span></dd>
+								</dl>
+								<!-- card feature end -->
+							</div>
+							<div class="col">
+								<h3>Общее описание</h3>
+								<!-- card description -->
+								<div class="card-description">
+									<p>Социальная ориентированность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориентированность жилых комплексов. Наши комплексы сдаются  сдаютсяс построенными школами, детскими садами. Социальная ориентированность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориентированность жилых комплексов.</p>
+								</div>
+								<p>Информация о наличии парковки.</p>
+								<!-- card description end -->
+							</div>
+						</div>
+						<!-- card info box end -->
+						
+						<!-- card options -->
+						<ul class="card-options-list">
+							<li>
+								<a href="#" class="btn btn-default"><i class="icon-plus"></i><span class="text">Добавить в избранное</span></a>
+							</li>
+							<li>
+								<a href="#" class="btn btn-default"><i class="icon-pin-light-green"></i><span class="text">Смотреть на карте города</span></a>
+							</li>
+						</ul>
+						<!-- card options end -->
+					</div>
+					<!-- card info end -->
+					
+					<!-- purchase -->
+					<div class="purchase">
+						<h3>Как купить эту квартиру</h3>
+						<!-- purchase list -->
+						<div class="purchase-list">
+							<ul class="dott-list">
+								<li><a href="#">100% оплата (скидка 5%, в том числе и по ипотеке)*</a></li>
+								<li><a href="#">Рассрочка 10 мес. с п. вз. 70%**</a></li>
+								<li><a href="#">Рассрочка 10 мес. с п. вз. 50%***</a></li>
+							</ul>
+						</div>
+						<!-- purchase list end -->
+					</div>
+					<!-- purchase end -->
+					
+					<!-- card buttons -->
+					<ul class="card-buttons">
+						<li><a href="#" class="btn btn-orange calculator-popup-inner">Рассчитать ипотеку</a></li>
+						<li><a href="#" class="btn btn-green callback">Мне интересно, позвоните мне</a></li>
+					</ul>
+					<!-- card buttons end -->
+				</div>
+				<!-- card content end -->
+			</div>
+			<!-- card content wrapper end -->
+			
+			<!-- card aside -->
+			<aside class="card-aside">
+				<div class="aside-widget">
+					<div class="card-aside-img">
+						<img src="pic/objects/object-05.jpg" width="177" height="119" alt="image description">
+					</div>
+					<h3>Жилой комплекс “Берег”</h3>
+					<p>Социальная ориенти- рованность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориен- тированность жилых комплексов.</p>
+					<!-- benefits list -->
+					<ul class="benefits-list">
+						<li>Преимущество один</li>
+						<li>Преимущество два</li>
+						<li>Преимущество три</li>
+					</ul>
+					<!-- benefits list end -->
+					<h4>Сайт комплекса:</h4>
+					<p><a href="mailto:www.akbars-dom.ru">www.akbars-dom.ru</a></p>
+					<div class="view-plan">
+						<a href="#" class="btn btn-default">Смотреть генеральный план</a>
+					</div>
+					<p>Проект реализуется в соответствии с ФЗ 214. Застройщик: Такой-то</p>
+					<p><a href="#">Проектная декларация</a></p>
+				</div>
+			</aside>
+			<!-- card aside -->
+		</div>
+		<!-- card holder end -->
+	</div>
+	
+	<div id="card-popup3" class="card-popup">
+		<!-- card link -->
+		<div class="card-link"><a href="#">Жилой комплекс “Берег”</a></div>
+		<!-- card link end -->
+		
+		<!-- card heading -->
+		<div class="card-heading">
+			<div class="print"><a href="#"><i class="icon-print"></i><span class="text">Распечатать</span></a></div>
+			<h2>Ул. Мусина, д.1, кв.3</h2>
+		</div>
+		<!-- card heading end -->
+		
+		<!-- card holder -->
+		<div class="card-holder">
+			<!-- card content wrapper -->
+			<div class="card-content-wrap">
+				<!-- card content -->
+				<div class="card-content">
+					<!-- card price -->
+					<div class="card-price">
+						<ul class="card-price-list">
+							<li>2-комнатная</li>
+							<li>62,6 м<sup>2</sup></li>
+							<li><b>4 945 000 р.</b></li>
+						</ul>
+					</div>
+					<!-- card price end -->
+					
+					<!-- card info -->
+					<div class="card-info">
+						<!-- card info box -->
+						<div class="card-info-box">
+							<div class="col">
+								<h3>Фотогалерея</h3>
+								<!-- card gallery -->
+								<div class="card-gallery">
+									<!-- object photo -->
+									<div class="large-img">
+										<a href=""><img src="pic/objects-card/large/img-01.jpg" width="344" height="238" alt="image description"></a>
+									</div>
+									<!-- object photo end -->
+									
+									<!-- card preview -->
+									<div class="card-preview">
+										<ul class="card-preview-list">
+											<li class="active">
+												<a href="pic/objects-card/large/img-01.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/objects-card/large/img-02.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/objects-card/large/img-03.jpg"><img src="pic/objects-card/small/img-01.jpg" width="39" height="39" alt="image description"></a>
+											</li>
+										</ul>
+									</div>
+									<!-- card preview end -->
+								</div>
+								<!-- card gallery end -->
+							</div>
+							<div class="col">
+								<h3>Расположение квартиры в доме</h3>
+								<!-- locate apartment -->
+								<div class="locate-apartment">
+									<img src="pic/locate-apartament/img-01.jpg" width="344" height="238" alt="image description">
+								</div>
+								<!-- locate apartment end -->
+							</div>
+						</div>
+						<!-- card info box end -->
+						
+						<!-- card info box -->
+						<div class="card-info-box">
+							<div class="col">
+								<!-- card feature -->
+								<dl class="card-feature">
+									<dt>Статус дома</dt><dd><span>Сдан</span></dd>
+									<dt>Квартира</dt><dd><span>3</span></dd>
+									<dt>Этаж/этажность</dt><dd><span>3/5</span></dd>
+									<dt>Количество комнат</dt><dd><span>2</span></dd>
+									<dt>Общая площадь</dt><dd><span>62,6</span></dd>
+									<dt>Жилая площадь, м2</dt><dd><span>39,3</span></dd>
+									<dt>Площадь кухни, м2</dt><dd><span>6,4</span></dd>
+									<dt>Текущая стоимость, руб./м2</dt><dd><span>79 000</span></dd>
+									<dt>Срок сдачи дома</dt><dd><span>12.11.2015</span></dd>
+									<dt>Статус квартиры</dt><dd><span>Открыт в продажу</span></dd>
+								</dl>
+								<!-- card feature end -->
+							</div>
+							<div class="col">
+								<h3>Общее описание</h3>
+								<!-- card description -->
+								<div class="card-description">
+									<p>Социальная ориентированность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориентированность жилых комплексов. Наши комплексы сдаются  сдаютсяс построенными школами, детскими садами. Социальная ориентированность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориентированность жилых комплексов.</p>
+								</div>
+								<p>Информация о наличии парковки.</p>
+								<!-- card description end -->
+							</div>
+						</div>
+						<!-- card info box end -->
+						
+						<!-- card options -->
+						<ul class="card-options-list">
+							<li>
+								<a href="#" class="btn btn-default"><i class="icon-plus"></i><span class="text">Добавить в избранное</span></a>
+							</li>
+							<li>
+								<a href="#" class="btn btn-default"><i class="icon-pin-light-green"></i><span class="text">Смотреть на карте города</span></a>
+							</li>
+						</ul>
+						<!-- card options end -->
+					</div>
+					<!-- card info end -->
+					
+					<!-- purchase -->
+					<div class="purchase">
+						<h3>Как купить эту квартиру</h3>
+						<!-- purchase list -->
+						<div class="purchase-list">
+							<ul class="dott-list">
+								<li><a href="#">100% оплата (скидка 5%, в том числе и по ипотеке)*</a></li>
+								<li><a href="#">Рассрочка 10 мес. с п. вз. 70%**</a></li>
+								<li><a href="#">Рассрочка 10 мес. с п. вз. 50%***</a></li>
+							</ul>
+						</div>
+						<!-- purchase list end -->
+					</div>
+					<!-- purchase end -->
+					
+					<!-- card buttons -->
+					<ul class="card-buttons">
+						<li><a href="#" class="btn btn-orange calculator-popup-inner">Рассчитать ипотеку</a></li>
+						<li><a href="#" class="btn btn-green callback">Мне интересно, позвоните мне</a></li>
+					</ul>
+					<!-- card buttons end -->
+				</div>
+				<!-- card content end -->
+			</div>
+			<!-- card content wrapper end -->
+			
+			<!-- card aside -->
+			<aside class="card-aside">
+				<div class="aside-widget">
+					<div class="card-aside-img">
+						<img src="pic/objects/object-05.jpg" width="177" height="119" alt="image description">
+					</div>
+					<h3>Жилой комплекс “Берег”</h3>
+					<p>Социальная ориенти- рованность жилых комплексов. Наши комплексы сдаются  с построенными школами, детскими садами, магазинами. Социальная ориен- тированность жилых комплексов.</p>
+					<!-- benefits list -->
+					<ul class="benefits-list">
+						<li>Преимущество один</li>
+						<li>Преимущество два</li>
+						<li>Преимущество три</li>
+					</ul>
+					<!-- benefits list end -->
+					<h4>Сайт комплекса:</h4>
+					<p><a href="mailto:www.akbars-dom.ru">www.akbars-dom.ru</a></p>
+					<div class="view-plan">
+						<a href="#" class="btn btn-default">Смотреть генеральный план</a>
+					</div>
+					<p>Проект реализуется в соответствии с ФЗ 214. Застройщик: Такой-то</p>
+					<p><a href="#">Проектная декларация</a></p>
+				</div>
+			</aside>
+			<!-- card aside -->
+		</div>
+		<!-- card holder end -->
+	</div>
+	<!-- card popups end -->
+</div>
+<!-- popup end -->
+</body>
+</html>

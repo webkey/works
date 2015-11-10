@@ -1,0 +1,11 @@
+/* Lucida Grande regular */
+@font-face {
+	font-family: 'lucida-grande';
+	src: url('../fonts/lucida-grande/regular/lucida-grande.eot');
+	src: url('../fonts/lucida-grande/regular/lucida-grande.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/lucida-grande/regular/lucida-grande.woff') format('woff'),
+	url('../fonts/lucida-grande/regular/lucida-grande.ttf') format('truetype'),
+	url('../fonts/lucida-grande/regular/lucida-grande.svg#lucida-grande') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

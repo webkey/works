@@ -1,0 +1,935 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>АБН - Конкурсы</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+
+<!-- main style -->
+<link href="css/all.css" rel="stylesheet" media="screen">
+
+<!-- style for IE -->
+<!--[if gte IE 9]><link rel="stylesheet" href="css/ie9.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" media="screen, projection"><![endif]-->
+
+<!-- jquery library -->
+<script src="js/jquery-1.8.2.min.js"></script>
+<!-- ui -->
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<!-- widgets -->
+<script src="js/widgets.js"></script>
+<!-- main functions -->
+<script src="js/functions.js"></script>
+<!-- Yandex map -->
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper complex-page">
+	<!-- object search -->
+	<div class="object-search fixed">
+		<div class="object-search-holder">
+			<!-- max-wrap -->
+			<div class="max-wrap">
+				<!-- alternative logo -->
+				<strong class="alt-logo">
+					<a href="#">
+						<strong class="logo-link"><span>на главную</span></strong>
+						ДОН АК Барс Недвижимость
+					</a>
+				</strong>
+				<!-- alternative logo end -->
+				
+				<!-- tabs wrap -->
+				<div class="tabs-wrap">
+					<!-- tab controls -->
+					<div class="tab-controls-holder">
+						<ul class="tab-controls">
+							<li class="active"><a href="#">Квартиры<i class="corner-tab"></i></a></li>
+							<li><a href="#">Дома и участки<i class="corner-tab"></i></a></li>
+							<li><a href="#">Коммерческая недвижимость<i class="corner-tab"></i></a></li>
+						</ul>
+					</div>
+					<!-- tab controls end -->
+					
+					<!-- map drop -->
+					<div class="map-drop">
+						<div class="map-wrap">
+							<!-- map -->
+							<div class="map" data-left="55.785793" data-right="49.106585" data-zoom="10"></div>
+							<!-- map end -->
+						</div>
+						<a href="#" class="btn btn-open-map"><i class="icon-pin"></i>Смотреть объекты на карте</a>
+						<a href="#" class="btn btn-close-map">Свернуть карту</a>
+					</div>
+					<!-- map drop end -->
+					
+					<!-- tabs -->
+					<div class="tabs">
+						<div class="tab">
+							<!-- filter form -->
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box in-first-col">
+													<span class="label">Количество комнат</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-flat-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-flat-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-flat-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-flat-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-flat-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="40" id="area-flat-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-flat-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="356" id="area-flat-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="filter-row">
+												<div class="filter-box in-first-col">
+													<span class="label">Статус дома</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Сдан</option>
+																<option value="2">option 1</option>
+																<option value="3">option 2</option>
+																<option value="4">option 3</option>
+																<option value="5">option 4</option>
+																<option value="6">option 5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-complex">
+													<span class="label">Комплекс</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district">
+													<span class="label">Район</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать квартиры</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- filter form end -->
+						</div>
+						
+						<div class="tab">
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь дома</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-house-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-house-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-house-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-house-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-village">
+													<span class="label">Поселок</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district">
+													<span class="label">Район</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь участка</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-land-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-land-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-land-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-land-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-land-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-land-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-land-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-land-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать дома и участки</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						
+						<div class="tab">
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-property-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-property-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-property-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-property-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-property-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-property-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-property-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-property-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district-short">
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+													<span class="label">Район</span>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать объекты</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- tabs end -->
+				</div>
+				<!-- tabs wrap end -->
+			</div>
+			<!-- max-wrap -->
+		</div>
+		
+		<!-- find object -->
+		<div class="find-object">
+			<a href="#" class="btn btn-find-object"><i class="arrow-open"></i>подобрать квартиру</a>
+		</div>
+		<!-- find object end -->
+	</div>
+	<!-- object search end -->
+	
+	<!-- header -->
+	<header class="header">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- header holder -->
+			<div class="header-holder">
+				<!-- logo -->
+				<strong class="logo">
+					<a href="#">
+						<strong class="logo-link"><span>на главную</span></strong>
+						ДОН АК Барс Недвижимость
+					</a>
+				</strong>
+				<!-- logo end -->
+				
+				<!-- user links -->
+				<ul class="user-links-list">
+					<li><a href="#"><i class="icon-view-gray"></i>вы смотрели</a></li>
+					<li>
+						<a href="#" title="Добавляйте квартиры в избранное и вы всегда сможете найти их по этой ссылке."><i class="icon-flats-gray"></i>избранные квартиры</a>
+						<span class="added-flats">13 квартир добавлено</span>
+						<!-- added flats box -->
+						<div class="added-flats-box">
+							<ul class="added-flats-list">
+								<li>
+									<a href="#">
+										<strong class="name">XXI век</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+							</ul>
+							<div class="complete-list">
+								<a href="#">Перейти к полному списку</a>
+							</div>
+						</div>
+						<!-- added flats box end -->
+					</li>
+				</ul>
+				<!-- user links end -->
+				
+				<!-- callback -->
+				<div class="callback-holder">
+					<a href="#" class="btn btn-default callback">Заказать звонок</a>
+				</div>
+				<!-- callback end -->
+				
+				<!-- phone -->
+				<div class="phone-wrap">
+					<strong class="phone"><i class="icon-call"></i><span class="phone-code">8 (843)</span> 295-77-77</strong>
+					<!-- social networks -->
+					<ul class="social-networks">
+						<li><a href="https://twitter.com/ABNsale" class="soc-icon-twitter" target="_blank">twitter</a></li>
+						<li><a href="https://www.facebook.com/akBarsNedvizimost" class="soc-icon-facebook" target="_blank">facebook</a></li>
+						<li><a href="http://vk.com/akbarsnedvizimost" class="soc-icon-vk" target="_blank">vk</a></li>
+						<li><a href="http://www.youtube.com/user/AkBarsDevelopment?feature=CBAQwRs%3D" class="soc-icon-youtube" target="_blank">youtube</a></li>
+					</ul>
+					<!-- social networks end -->
+				</div>
+				<!-- phone end -->
+			</div>
+			<!-- header holder end -->
+			
+			<!-- main navigation -->
+			<div class="nav-box">
+				<div class="max-wrap">
+					<nav class="nav">
+						<!-- navigation list -->
+						<ul class="nav-list">
+							<li><a href="#">главная</a></li>
+							<li><a href="#">О компании</a>
+								<div class="sub-nav">
+									<ul>
+										<li><a href="#">Главное</a></li>
+										<li><a href="#">Команда</a></li>
+										<li><a href="#">Отзывы</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Все объекты</a></li>
+							<li><a href="#">Формы оплаты</a></li>
+							<li><a href="#">акции</a></li>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<!-- navigation list end -->
+						
+						<!-- search form -->
+						<div class="search-form">
+							<form action="#" method="get">
+								<fieldset>
+									<div class="search-holder">
+										<div class="input-holder-wrap">
+											<div class="input-holder">
+												<input type="text" placeholder="Квартира">
+											</div>
+											<div class="btn sbm-search">
+												<i class="icon-magnifier-green"></i>
+												<input type="submit" value="">
+											</div>
+											<a href="#" class="btn-search-close"><i class="icon-close-form"></i></a>
+										</div>
+										<a href="#" class="submit-search"><i class="icon-magnifier"></i>поиск</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<!-- search form end -->
+					</nav>
+				</div>
+			</div>
+			<!-- main navigation end -->
+		</div>
+		<!-- max-wrap end -->
+	</header>
+	<!-- header end -->
+	
+	<!-- main divider -->
+	<div class="main-divider">
+		<div class="main-divider-holder">
+			<img src="pic/img-intro.jpg" width="1900" height="520" alt="image description">
+		</div>
+	</div>
+	<!-- main divider end -->
+	
+	<!-- main -->
+	<div class="main">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- main holder -->
+			<div class="main-holder">
+				<!-- main frame -->
+				<div class="main-frame">
+					<!-- main header -->
+					<div class="main-header">
+						<div class="btn-back">
+							<a href="#" class="#"><i class="arrow-back"></i><span class="text">Вернуться к списку конкурсов</span></a>
+						</div>
+						<h1>Конкурсы</h1>
+					</div>
+					<h2>Конкурс «Мы дома!»</h2>
+					<!-- main header end -->
+					
+					<!-- competition conditions -->
+					<div class="conditions">
+						<div class="conditions-img">
+							<img src="pic/contests/contest-01.png" width="434" height="248" alt="image description">
+						</div>
+						<ul class="conditions-list">
+							<li>Сделайте фотографию своей семьи дома;</li>
+							<li>Загрузите лучшие на сайт;</li>
+							<li>Поделитесь информацией о конкурсе со своими друзьями;</li>
+							<li>Собирайте голоса за Ваши работы в конкурсном альбоме;</li>
+							<li>Получайте великолепные призы!</li>
+						</ul>
+					</div>
+					<!-- competition conditions end -->
+					
+					<!-- contest rules -->
+					<div class="contest-rules">
+						<h3>Правила конкурса</h3>
+						<ol class="decimal-list">
+							<li>На конкурс принимаются фотографии, соответствующие теме и удовлетворяющие правилам конкретного конкурса.</li>
+							<li>На конкурс принимаются фотографии семьи (двух и более человек)</li>
+							<li>Каждый участник представляет на конкурс только три фотографии. Наличие названий к фотографиям приветствуется!</li>
+							<li>Автор, самостоятельно загружает свои фотографии на сайт, заполнив регистрационную форму. Загруженные фотографии скрываются до просмотра модераторами фотоконкурса на предмет соответствия условиям конкурса.</li>
+							<li>Срок представления фотографий для участия в Конкурсе — с 12 марта по 12 апреля 2013 г. включительно.</li>
+							<li>Победители определяются по количеству голосов.</li>
+							<li>Голосовать за фотографии могут все посетители сайта.</li>
+							<li>Семья, победившая в конкурсе, получает сертификат на фотосессию.</li>
+							<li>Результаты Конкурса будут опубликованы на сайте www.akbars-dom.ru 15 апреля 2013 года.</li>
+							<li>К участию в конкурсе не принимаются:
+								<ul>
+									<li>фотографии, не подходящие по тематике конкурса;</li>
+									<li>фотографии, противоречащие общепризнанным нормам морали.</li>
+								</ul>
+							</li>
+							<li>Соглашаясь на участие в конкурсе, вы принимаете данные правила, а также:
+								<ul>
+									<li>Подтверждаете, что права на фотографии принадлежат Вам и если возникнут проблемы с соблюдением авторских прав на данное изображение, то обязуетесь разрешать их самостоятельно. Даёте согласие на возможное использование фотографии в рекламных целях сайта.</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+					<!-- contest rules end -->
+					
+					<!-- contests final -->
+					<div class="contests-final">
+						<span class="icon-contests"></span>
+						<div class="contests-final-holder">
+							<p>Конкурс завершен. Победила фотография Лутфулиной Лилии <a href="#">«Купания»</a>.</p>
+							<p>Поздравляем с победой!</p>
+						</div>
+					</div>
+					<!-- contests final end -->
+					
+					<!-- gallery -->
+					<div class="gallery">
+						<h3>Фотографии</h3>
+						<!-- gallery list -->
+						<ul class="gallery-list">
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-01.jpg" src="pic/gallery/small/img-01.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">98</span>
+									<h4><a href="#">Купания</a></h4>
+									<span class="author">Лутфулина Лилия</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-02.jpg" src="pic/gallery/small/img-02.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">200</span>
+									<h4><a href="#">Купания 02</a></h4>
+									<span class="author">Лутфулина Лилия 02</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-03.jpg" src="pic/gallery/small/img-03.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">300</span>
+									<h4><a href="#">Купания 03</a></h4>
+									<span class="author">Лутфулина Лилия 03</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-01.jpg" src="pic/gallery/small/img-01.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">98</span>
+									<h4><a href="#">Купания</a></h4>
+									<span class="author">Лутфулина Лилия</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+							
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-01.jpg" src="pic/gallery/small/img-01.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">98</span>
+									<h4><a href="#">Купания</a></h4>
+									<span class="author">Лутфулина Лилия</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-01.jpg" src="pic/gallery/small/img-01.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">98</span>
+									<h4><a href="#">Купания</a></h4>
+									<span class="author">Лутфулина Лилия</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-01.jpg" src="pic/gallery/small/img-01.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">98</span>
+									<h4><a href="#">Купания</a></h4>
+									<span class="author">Лутфулина Лилия</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+							<li>
+								<div class="gallery-img">
+									<a href="#"><img data-src="pic/gallery/large/img-01.jpg" src="pic/gallery/small/img-01.jpg" width="227" height="151" alt="image description"></a>
+								</div>
+								<div class="gallery-description">
+									<span class="likes">98</span>
+									<h4><a href="#">Купания</a></h4>
+									<span class="author">Лутфулина Лилия</span>
+								</div>
+								<a href="#contest-popup" class="btn btn-default contest-popup-link">Голосовать</a>
+							</li>
+						</ul>
+						<!-- gallery list end -->
+					</div>
+					
+					<!-- gallery end -->
+				</div>
+				<!-- main frame end -->
+			</div>
+			<!-- main holder end -->
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- main end -->
+	
+	<!-- spacer -->
+	<div class="spacer"></div>
+	<!-- spacer -->
+</div>
+<!-- wrapper end -->
+
+<!-- footer -->
+<footer class="footer">
+	<!-- footer top -->
+	<div class="footer-top">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- logo in footer -->
+			<strong class="footer-logo"><a href="#">ДОН АК Барс Недвижимость</a></strong>
+			<!-- logo in footer end -->
+			
+			<!-- navigation bar -->
+			<ul class="nav-bar-list">
+				<li>
+					<strong><a href="#">Поиск квартир</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">О компании</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Все объекты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Формы оплаты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Пресс-центр</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">контакты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- navigation bar end -->
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- footer top end -->
+	
+	<!-- footer bottom -->
+	<div class="footer-bottom">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- callback -->
+			<div class="callback-holder">
+				<a href="#" class="btn btn-default callback">Заказать звонок</a>
+			</div>
+			<!-- callback end -->
+			<strong class="phone"><i class="icon-call"></i><span class="phone-code">8 (843)</span> 295-77-77</strong>
+			<div class="footer-bottom-text">
+				<p><a href="#">«AkBars»</a> 2006-2014</p>
+			</div>
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- footer bottom end -->
+</footer>
+<!-- footer end -->
+
+<!-- callback form -->
+<div class="callback-form">
+	<a href="#" class="btn-close">close</a>
+	<form action="#" method="get">
+		<fieldset>
+			<strong class="title">Заказать звонок менеджера</strong>
+			<div class="form-line">
+				<div class="input-holder">
+					<input type="text" placeholder="Ваше имя" name="callback_form_name">
+				</div>
+			</div>
+			<div class="form-line">
+				<div class="input-holder">
+					<input type="text" placeholder="Ваше телефон" name="callback_form_phone">
+				</div>
+			</div>
+			<div class="submit-holder">
+				<div class="btn btn-green">
+					<span>Перезвоните мне</span>
+					<input type="submit" value="">
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- callback form end -->
+
+<!-- callback confirm -->
+<div class="callback-confirm">
+	<a href="#" class="btn-close">close</a>
+	<strong class="title">Спасибо!<br> Заявка отправлена.</strong>
+	<span class="icon-confirm"></span>
+	<div class="close-link">
+		<a href="#" class="close">закрыть</a>
+	</div>
+</div>
+<!-- callback confirm end -->
+
+<!-- popup -->
+<div class="popup-holder">
+	<!-- contest popup -->
+	<div id="contest-popup" class="default-popup contest-popup">
+		<h2>Конкурсная работа <b>№</b><span class="serial-number">12</span></h2>
+		<!-- contest -->
+		<div class="contest">
+			<!-- contest image -->
+			<div class="contest-img">
+				<img src="pic/gallery/large/img-01.jpg" alt="image description" width="530" height="353">
+			</div>
+			<!-- contest image end -->
+			
+			<!-- contest description -->
+			<div class="contest-description">
+				<h4>Купания</h4>
+				<span class="author">Лутфулина Лилия</span>
+				<div class="likes-box">
+					<span class="likes">98</span>
+					<a href="#" class="btn btn-green"><span class="plus-one">+1</span>Проголосовать</a>
+				</div>
+				<span class="share">Рассказать друзьям:</span>
+				<div class="likes-plugin">
+					<img src="img/plugin-like.jpg" width="320" height="22" alt="image description">
+				</div>
+			</div>
+			<!-- contest description end -->
+		</div>
+		<!-- contest end -->
+			
+		<!-- contest switche -->
+		<ul class="contest-switcher">
+			<li>
+				<a href="#" class="popup-prev"><i class="arrow-prev"></i><span class="text">Предыдущая</span></a>
+			</li>
+			<li>
+				<a href="#" class="popup-next"><span class="text">Слеующая</span><i class="arrow-next"></i></a>
+			</li>
+		</ul>
+		<!-- contest switche end -->
+	</div>
+	<!-- contest popup end -->
+</div>
+<!-- popup end -->
+</body>
+</html>

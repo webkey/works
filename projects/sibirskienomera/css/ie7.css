@@ -1,0 +1,57 @@
+﻿.content ul li, .news-title h3{behavior:expression(!this.isInserted==true ? this.isInserted=(this.insertBefore(document.createElement("after"))) : '');}
+.content ol li{
+	behavior: expression(
+		(this.listFlag!=null ? this.listFlag=true : (
+			(function(t){
+				if (t.parentNode.tagName == 'OL') {
+					var txt = (++t.parentNode.IEcounter || (t.parentNode.IEcounter = 1)) + '.';
+					if (!t.childNodes.length) {
+						t.innerHTML = '<before>'+txt+'</before>';
+					} else {
+						t.before = document.createElement("before");
+						t.before.appendChild(document.createTextNode(txt));
+						t.insertBefore(t.before,t.childNodes(0));
+					}
+					t.style.behavior= '';
+				}
+			})(this)
+		),this.listFlag=true)
+	);
+}
+/* rooms/album list */
+.content .rooms-list,
+.content .album-list{
+	margin-left: -15px;
+}
+.content .rooms-list>li,
+.content .album-list>li{
+	width: 325px;
+	padding-left: 15px;
+}
+.sidebar .languages li{margin: 0 0 0 2px;}
+.sidebar .languages li:first-child{margin-left: 0;}
+.guests-holder{
+	position: relative;
+	zoom: 1;
+	width: 52px;
+}
+.guests input[type="text"]{width: 20px !important;}
+.room-form-short .guests .label{margin: -3px 0 2px 0;}
+/* three boxes */
+.three-boxes{margin: 0 -15px 22px;}
+.three-boxes .box{margin-left: 15px;}
+/* three boxes end */
+.room-form-wrap{zoom: 1;}
+.reach-links a>span{zoom: 1;}
+.gallery-room{zoom: 1;}
+.choose-heading{zoom: 1;}
+.view-layout .view-layout-link{
+	border-color: transparent;
+	text-decoration: underline;
+}
+.view-layout>a:hover .view-layout-link{text-decoration: none;}
+.reservation-closer{zoom: 1;}
+.news-list after{
+	display: none;
+	content: none;
+}

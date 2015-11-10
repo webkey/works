@@ -1,0 +1,1605 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>АБН -Каталог недвижимости</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+
+<!-- main style -->
+<link href="css/all.css" rel="stylesheet" media="screen">
+
+<!-- style for IE -->
+<!--[if gte IE 9]><link rel="stylesheet" href="css/ie9.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" media="screen, projection"><![endif]-->
+
+<!-- jquery library -->
+<script src="js/jquery-1.8.2.min.js"></script>
+<!-- ui -->
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<!-- widgets -->
+<script src="js/widgets.js"></script>
+<!-- main functions -->
+<script src="js/functions.js"></script>
+<!-- Yandex map -->
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- object search -->
+	<div class="object-search fixed">
+		<div class="object-search-holder">
+			<!-- max-wrap -->
+			<div class="max-wrap">
+				<!-- alternative logo -->
+				<strong class="alt-logo">
+					<a href="#">
+						<strong class="logo-link"><span>на главную</span></strong>
+						ДОН АК Барс Недвижимость
+					</a>
+				</strong>
+				<!-- alternative logo end -->
+				
+				<!-- tabs wrap -->
+				<div class="tabs-wrap">
+					<!-- tab controls -->
+					<div class="tab-controls-holder">
+						<ul class="tab-controls">
+							<li class="active"><a href="#">Квартиры<i class="corner-tab"></i></a></li>
+							<li><a href="#">Дома и участки<i class="corner-tab"></i></a></li>
+							<li><a href="#">Коммерческая недвижимость<i class="corner-tab"></i></a></li>
+						</ul>
+					</div>
+					<!-- tab controls end -->
+					
+					<!-- map drop -->
+					<div class="map-drop">
+						<div class="map-wrap">
+							<!-- map -->
+							<div class="map" data-left="55.785793" data-right="49.106585" data-zoom="10"></div>
+							<!-- map end -->
+						</div>
+						<a href="#" class="btn btn-open-map"><i class="icon-pin"></i>Смотреть объекты на карте</a>
+						<a href="#" class="btn btn-close-map">Свернуть карту</a>
+					</div>
+					<!-- map drop end -->
+					
+					<!-- tabs -->
+					<div class="tabs">
+						<div class="tab">
+							<!-- filter form -->
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box in-first-col">
+													<span class="label">Количество комнат</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-flat-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-flat-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-flat-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-flat-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-flat-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="40" id="area-flat-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-flat-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="356" id="area-flat-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="filter-row">
+												<div class="filter-box in-first-col">
+													<span class="label">Статус дома</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Сдан</option>
+																<option value="2">option 1</option>
+																<option value="3">option 2</option>
+																<option value="4">option 3</option>
+																<option value="5">option 4</option>
+																<option value="6">option 5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-complex">
+													<span class="label">Комплекс</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district">
+													<span class="label">Район</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любое</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать квартиры</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- filter form end -->
+						</div>
+						
+						<div class="tab">
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь дома</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-house-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-house-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-house-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-house-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-village">
+													<span class="label">Поселок</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district">
+													<span class="label">Район</span>
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь участка</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-land-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-land-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-land-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-land-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-land-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-land-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-land-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-land-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать дома и участки</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						
+						<div class="tab">
+							<div class="filter-form">
+								<form action="#" method="get">
+									<fieldset>
+										<div class="filter-form-holder">
+											<div class="filter-row">
+												<div class="filter-box filter-area-box">
+													<span class="label">Площадь</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-property-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-property-from-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="area-property-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="" id="area-property-to-01">
+															<span class="unit">м<sup>2</sup></span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-price-box">
+													<span class="label">Цена</span>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-property-from-01">от</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="1 000 000" id="price-property-from-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+													<div class="form-line">
+														<div class="label-holder">
+															<label for="price-property-to-01">до</label>
+														</div>
+														<div class="input-holder">
+															<input type="text" placeholder="33 000 000" id="price-property-to-01">
+															<span class="unit">р.</span>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-box filter-district-short">
+													<div class="select-holder one-third">
+														<div class="bselect">
+															<select class="cselect">
+																<option value="1">Любой</option>
+																<option value="2">1</option>
+																<option value="3">2</option>
+																<option value="4">3</option>
+																<option value="5">4</option>
+																<option value="6">5</option>
+															</select>
+														</div>
+													</div>
+													<span class="label">Район</span>
+												</div>
+											</div>
+											<i class="corner-filter"></i>
+										</div>
+										<div class="form-buttons">
+											<div class="btn btn-red">
+												<span>Показать объекты</span>
+												<input type="submit" value="">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- tabs end -->
+				</div>
+				<!-- tabs wrap end -->
+			</div>
+			<!-- max-wrap -->
+		</div>
+		
+		<!-- find object -->
+		<div class="find-object">
+			<a href="#" class="btn btn-find-object"><i class="arrow-open"></i>подобрать квартиру</a>
+		</div>
+		<!-- find object end -->
+	</div>
+	<!-- object search end -->
+	
+	<!-- header -->
+	<header class="header">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- header holder -->
+			<div class="header-holder">
+				<!-- logo -->
+				<strong class="logo">
+					<a href="#">
+						<strong class="logo-link"><span>на главную</span></strong>
+						ДОН АК Барс Недвижимость
+					</a>
+				</strong>
+				<!-- logo end -->
+				
+				<!-- user links -->
+				<ul class="user-links-list">
+					<li><a href="#"><i class="icon-view-gray"></i>вы смотрели</a></li>
+					<li>
+						<a href="#" title="Добавляйте квартиры в избранное и вы всегда сможете найти их по этой ссылке."><i class="icon-flats-gray"></i>избранные квартиры</a>
+						<span class="added-flats">13 квартир добавлено</span>
+						<!-- added flats box -->
+						<div class="added-flats-box">
+							<ul class="added-flats-list">
+								<li>
+									<a href="#">
+										<strong class="name">XXI век</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<strong class="name">Солнечная долина</strong>
+										<div class="brief-info">
+											<span class="description">2 комнатн., 70 м2</span> <span class="price">5 400 000 р.</span>
+										</div>
+										<span class="adr">Космонавтов, 43</span>
+									</a>
+								</li>
+							</ul>
+							<div class="complete-list">
+								<a href="#">Перейти к полному списку</a>
+							</div>
+						</div>
+						<!-- added flats box end -->
+					</li>
+				</ul>
+				<!-- user links end -->
+				
+				<!-- callback -->
+				<div class="callback-holder">
+					<a href="#" class="btn btn-default callback">Заказать звонок</a>
+				</div>
+				<!-- callback end -->
+				
+				<!-- phone -->
+				<div class="phone-wrap">
+					<strong class="phone"><i class="icon-call"></i><span class="phone-code">8 (843)</span> 295-77-77</strong>
+					<!-- social networks -->
+					<ul class="social-networks">
+						<li><a href="https://twitter.com/ABNsale" class="soc-icon-twitter" target="_blank">twitter</a></li>
+						<li><a href="https://www.facebook.com/akBarsNedvizimost" class="soc-icon-facebook" target="_blank">facebook</a></li>
+						<li><a href="http://vk.com/akbarsnedvizimost" class="soc-icon-vk" target="_blank">vk</a></li>
+						<li><a href="http://www.youtube.com/user/AkBarsDevelopment?feature=CBAQwRs%3D" class="soc-icon-youtube" target="_blank">youtube</a></li>
+					</ul>
+					<!-- social networks end -->
+				</div>
+				<!-- phone end -->
+			</div>
+			<!-- header holder end -->
+			
+			<!-- main navigation -->
+			<div class="nav-box">
+				<div class="max-wrap">
+					<nav class="nav">
+						<!-- navigation list -->
+						<ul class="nav-list">
+							<li><a href="#">главная</a></li>
+							<li class="active"><a href="#">О компании</a>
+								<div class="sub-nav">
+									<ul>
+										<li><a href="#">Главное</a></li>
+										<li><a href="#">Команда</a></li>
+										<li><a href="#">Отзывы</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Все объекты</a></li>
+							<li><a href="#">Формы оплаты</a></li>
+							<li><a href="#">акции</a></li>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<!-- navigation list end -->
+						
+						<!-- search form -->
+						<div class="search-form">
+							<form action="#" method="get">
+								<fieldset>
+									<div class="search-holder">
+										<div class="input-holder-wrap">
+											<div class="input-holder">
+												<input type="text" placeholder="Квартира">
+											</div>
+											<div class="btn sbm-search">
+												<i class="icon-magnifier-green"></i>
+												<input type="submit" value="">
+											</div>
+											<a href="#" class="btn-search-close"><i class="icon-close-form"></i></a>
+										</div>
+										<a href="#" class="submit-search"><i class="icon-magnifier"></i>поиск</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<!-- search form end -->
+					</nav>
+				</div>
+			</div>
+			<!-- main navigation end -->
+		</div>
+		<!-- max-wrap end -->
+	</header>
+	<!-- header end -->
+	
+	<!-- main divider -->
+	<div class="main-divider">
+		<div class="main-divider-holder">
+			<img src="pic/img-intro.jpg" width="1900" height="520" alt="image description">
+		</div>
+	</div>
+	<!-- main divider end -->
+	
+	<!-- main -->
+	<div class="main">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- main holder -->
+			<div class="main-holder">
+				<h1>Каталог недвижимости</h1>
+				<!-- text description -->
+				<div class="text-description">
+					<div class="text-description-holder">
+						<p>В феврале 2011 года для удобства покупателей была создана компания <a href="#">«АК БАРС Недвижимость»</a>, которая объединила в единую структуру продажи крупнейших жилых комплексов и ряд «точечных» новостроек. </p>
+					</div>
+				</div>
+				<!-- text description end -->
+				
+				<!-- filters content -->
+				<div class="filters-content">
+					<!-- tabs wrap -->
+					<div class="tabs-wrap">
+						<!-- tab controls -->
+						<div class="tab-controls-holder">
+							<ul class="tab-controls">
+								<li class="active"><a href="#">Квартиры<i class="corner-tab-gray"></i></a></li>
+								<li><a href="#">Дома и участки<i class="corner-tab-gray"></i></a></li>
+								<li><a href="#">Коммерческая недвижимость<i class="corner-tab-gray"></i></a></li>
+								<li><a href="#">Парковочные места<i class="corner-tab-gray"></i></a></li>
+							</ul>
+						</div>
+						<!-- tab controls end -->
+						
+						<!-- map drop -->
+						<div class="map-drop">
+							<div class="map-wrap">
+								<!-- map -->
+								<div class="map" data-left="55.785793" data-right="49.106585" data-zoom="10"></div>
+								<!-- map end -->
+							</div>
+							<a href="#" class="btn btn-open-map"><i class="icon-pin"></i>Смотреть объекты на карте</a>
+							<a href="#" class="btn btn-close-map">Свернуть карту</a>
+						</div>
+						<!-- map drop end -->
+						
+						<!-- tabs -->
+						<div class="tabs">
+							<div class="tab">
+								<!-- filter form -->
+								<div class="filter-form">
+									<form action="#" method="get">
+										<fieldset>
+											<div class="filter-form-holder">
+												<div class="filter-row">
+													<div class="filter-box in-first-col">
+														<span class="label">Количество комнат</span>
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Любое</option>
+																	<option value="2">1</option>
+																	<option value="3">2</option>
+																	<option value="4">3</option>
+																	<option value="5">4</option>
+																	<option value="6">5</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-price-box">
+														<span class="label">Цена</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-flat-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="1 000 000" id="price-flat-from">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-flat-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="33 000 000" id="price-flat-to">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-area-box">
+														<span class="label">Площадь</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-flat-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="40" id="area-flat-from">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-flat-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="356" id="area-flat-to">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-row">
+													<div class="filter-box in-first-col">
+														<span class="label">Статус дома</span>
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Сдан</option>
+																	<option value="2">option 1</option>
+																	<option value="3">option 2</option>
+																	<option value="4">option 3</option>
+																	<option value="5">option 4</option>
+																	<option value="6">option 5</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-complex">
+														<span class="label">Комплекс</span>
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Любое</option>
+																	<option value="2">1</option>
+																	<option value="3">2</option>
+																	<option value="4">3</option>
+																	<option value="5">4</option>
+																	<option value="6">5</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-district">
+														<span class="label">Район</span>
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Любое</option>
+																	<option value="2">1</option>
+																	<option value="3">2</option>
+																	<option value="4">3</option>
+																	<option value="5">4</option>
+																	<option value="6">5</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<i class="corner-filter-gray"></i>
+											</div>
+											<div class="form-buttons">
+												<div class="btn btn-red">
+													<span>Показать квартиры</span>
+													<input type="submit" value="">
+												</div>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+								<!-- filter form end -->
+							</div>
+							
+							<div class="tab">
+								<div class="filter-form">
+									<form action="#" method="get">
+										<fieldset>
+											<div class="filter-form-holder">
+												<div class="filter-row">
+													<div class="filter-box filter-area-box">
+														<span class="label">Площадь дома</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-house-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-house-from">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-house-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-house-to">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-village">
+														<span class="label">Поселок</span>
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Любой</option>
+																	<option value="2">1</option>
+																	<option value="3">2</option>
+																	<option value="4">3</option>
+																	<option value="5">4</option>
+																	<option value="6">5</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-district">
+														<span class="label">Район</span>
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Любой</option>
+																	<option value="2">1</option>
+																	<option value="3">2</option>
+																	<option value="4">3</option>
+																	<option value="5">4</option>
+																	<option value="6">5</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="filter-row">
+													<div class="filter-box filter-area-box">
+														<span class="label">Площадь участка</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-land-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-land-from">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-land-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-land-to">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-price-box">
+														<span class="label">Цена</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-land-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="1 000 000" id="price-land-from">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-land-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="33 000 000" id="price-land-to">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<i class="corner-filter-gray"></i>
+											</div>
+											<div class="form-buttons">
+												<div class="btn btn-red">
+													<span>Показать дома и участки</span>
+													<input type="submit" value="">
+												</div>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+							</div>
+							
+							<div class="tab">
+								<div class="filter-form">
+									<form action="#" method="get">
+										<fieldset>
+											<div class="filter-form-holder">
+												<div class="filter-row">
+													<div class="filter-box filter-area-box">
+														<span class="label">Площадь</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-property-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-property-from">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-property-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-property-to">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-price-box">
+														<span class="label">Цена</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-property-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="1 000 000" id="price-property-from">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-property-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="33 000 000" id="price-property-to">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-district-short">
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Любой</option>
+																	<option value="2">1</option>
+																	<option value="3">2</option>
+																	<option value="4">3</option>
+																	<option value="5">4</option>
+																	<option value="6">5</option>
+																</select>
+															</div>
+														</div>
+														<span class="label">Район</span>
+													</div>
+												</div>
+												<i class="corner-filter-gray"></i>
+											</div>
+											<div class="form-buttons">
+												<div class="btn btn-red">
+													<span>Показать объекты</span>
+													<input type="submit" value="">
+												</div>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+							</div>
+							
+							<div class="tab">
+								<div class="filter-form">
+									<form action="#" method="get">
+										<fieldset>
+											<div class="filter-form-holder">
+												<div class="filter-row">
+													<div class="filter-box filter-area-box">
+														<span class="label">Площадь</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-property-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-property-from">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="area-property-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="" id="area-property-to">
+																<span class="unit">м<sup>2</sup></span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-price-box">
+														<span class="label">Цена</span>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-property-from">от</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="1 000 000" id="price-property-from">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+														<div class="form-line">
+															<div class="label-holder">
+																<label for="price-property-to">до</label>
+															</div>
+															<div class="input-holder">
+																<input type="text" placeholder="33 000 000" id="price-property-to">
+																<span class="unit">р.</span>
+															</div>
+														</div>
+													</div>
+													
+													<div class="filter-box filter-district-short">
+														<div class="select-holder one-third">
+															<div class="bselect">
+																<select class="cselect">
+																	<option value="1">Любой</option>
+																	<option value="2">1</option>
+																	<option value="3">2</option>
+																	<option value="4">3</option>
+																	<option value="5">4</option>
+																	<option value="6">5</option>
+																</select>
+															</div>
+														</div>
+														<span class="label">Район</span>
+													</div>
+												</div>
+												<i class="corner-filter-gray"></i>
+											</div>
+											<div class="form-buttons">
+												<div class="btn btn-red">
+													<span>Показать объекты</span>
+													<input type="submit" value="">
+												</div>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- tabs end -->
+					</div>
+					<!-- tabs wrap end -->
+				</div>
+				<!-- filters content end -->
+				
+				<!-- realty -->
+				<div class="realty">
+					<!-- paging option -->
+					<div class="paging-option">
+						<!-- paging -->
+						<ul class="paging">
+							<li class="prev"><a href="#"><i class="arrow-prev-slider"></i></a></li>
+							<li class="current-page"><span>1</span></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li class="next"><a href="#"><i class="arrow-next-slider"></i></a></li>
+						</ul>
+						<!-- paging end -->
+						
+						<!-- view items -->
+						<div class="view-items">
+							<div class="label-holder">
+								<label for="view-items">Показать на странице:</label>
+							</div>
+							<div class="select-holder">
+								<div class="bselect">
+									<select class="cselect view-items-select" id="view-items">
+										<option value="1">40</option>
+										<option value="2">10</option>
+										<option value="3">20</option>
+										<option value="4">30</option>
+										<option value="5">50</option>
+										<option value="6">60</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- view items end -->
+					</div>
+					<!-- paging option -->
+					
+					<!-- objects table -->
+					<table class="objects-table def-table">
+						<thead>
+							<tr>
+								<th>Жилой комплекс</th>
+								<th>Количество комнат</th>
+								<th>Площадь, м2</th>
+								<th>Этаж</th>
+								<th>Номер квартиры</th>
+								<th>Улица</th>
+								<th>Дом</th>
+								<th>Срок сдачи</th>
+								<th>Стоимость, р.</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>XXI век</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+							<tr>
+								<td>Светлая долина</td>
+								<td>3</td>
+								<td>74</td>
+								<td>2</td>
+								<td>14</td>
+								<td>Камалеева</td>
+								<td>2а</td>
+								<td>IV rвартал 2015 г.</td>
+								<td><b>7 400 000</b></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- objects table end -->
+					
+					<!-- paging option -->
+					<div class="paging-option">
+						<!-- paging -->
+						<ul class="paging">
+							<li class="prev"><a href="#"><i class="arrow-prev-slider"></i></a></li>
+							<li class="current-page"><span>1</span></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li class="next"><a href="#"><i class="arrow-next-slider"></i></a></li>
+						</ul>
+						<!-- paging end -->
+						
+						<!-- view items -->
+						<div class="view-items">
+							<div class="label-holder">
+								<label for="view-items-bottom">Показать на странице:</label>
+							</div>
+							<div class="select-holder">
+								<div class="bselect">
+									<select class="cselect view-items-select" id="view-items-bottom">
+										<option value="1">40</option>
+										<option value="2">10</option>
+										<option value="3">20</option>
+										<option value="4">30</option>
+										<option value="5">50</option>
+										<option value="6">60</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- view items end -->
+					</div>
+					<!-- paging option -->
+				</div>
+				<!-- realty end -->
+				
+				<!-- object alternative view -->
+				<div class="object-alt">
+					<h2>Наши объекты</h2>
+					<p>Рынок коммерческой недвижимости в Казани переживает всплеск активности. Универсиада 2013, Чемпионат мира по водным видам спорта - 2015, Чемпионат мира по футболу - 2018 привлекают множество инвесторов, желающих купить коммерческую недвижимость и создать собственный прибыльный бизнес в Казани. Прогнозы финансовых аналитиков утверждают, что в ближайшие несколько лет коммерческая недвижимость в Казани подрастёт в цене, в связи с повышенным интересом к столице Республики Татарстана российских и зарубежных инвесторов.</p>
+					<!-- object characteristics -->
+					<table class="object-characteristics">
+						<thead>
+							<tr>
+								<th class="object-col">Объект</th>
+								<th class="local-col">Месторасположение</th>
+								<th class="square-col">Площадь, м2</th>
+								<th>Примечание</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="object-photo">
+										<a href=""><img src="pic/objects/object-02.jpg" width="264" height="180" alt="image description"></a>
+									</div>
+								</td>
+								<td>
+									<strong class="description">Ресторан (готовый бизнес),<br> ул. Сулейманова, 3</strong>
+									ул. Сулейманова, 3
+								</td>
+								<td>
+									<div class="square">83,9 кв.м</div>
+									<strong class="description">Стоимость:</strong>
+									<span class="price">от 15 000 000 руб.</span>
+								</td>
+								<td>
+									<dl>
+										<dt>Формы оплаты:</dt> <dd>100% оплата</dd>
+										<dt>Договор:</dt> <dd>договор купли-продажи.</dd>
+										<dt>Отделка:</dt> <dd>чистовая</dd>
+										<dt>Инфраструктура:</dt> <dd>Собственная парковка. Развитая инфраструктура, рядом ТЦ "Тандем", магазин оптовой торговли "МЕТРО", станция метро "Козья Слобода".</dd>
+										<dt>Вид:</dt> <dd>коммерческая недвижимость (назначение свободное)</dd>
+									</dl>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="object-photo">
+										<a href=""><img src="pic/objects/object-02.jpg" width="264" height="180" alt="image description"></a>
+									</div>
+								</td>
+								<td>
+									<strong class="description">Ресторан (готовый бизнес),<br> ул. Сулейманова, 3</strong>
+									ул. Сулейманова, 3
+								</td>
+								<td>
+									<div class="square">83,9 кв.м</div>
+									<strong class="description">Стоимость:</strong>
+									<span class="price">от 15 000 000 руб.</span>
+								</td>
+								<td>
+									<dl>
+										<dt>Формы оплаты:</dt> <dd>100% оплата</dd>
+										<dt>Договор:</dt> <dd>договор купли-продажи.</dd>
+										<dt>Отделка:</dt> <dd>чистовая</dd>
+										<dt>Инфраструктура:</dt> <dd>Собственная парковка. Развитая инфраструктура, рядом ТЦ "Тандем", магазин оптовой торговли "МЕТРО", станция метро "Козья Слобода".</dd>
+										<dt>Вид:</dt> <dd>коммерческая недвижимость (назначение свободное)</dd>
+									</dl>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="object-photo">
+										<a href=""><img src="pic/objects/object-02.jpg" width="264" height="180" alt="image description"></a>
+									</div>
+								</td>
+								<td>
+									<strong class="description">Ресторан (готовый бизнес),<br> ул. Сулейманова, 3</strong>
+									ул. Сулейманова, 3
+								</td>
+								<td>
+									<div class="square">83,9 кв.м</div>
+									<strong class="description">Стоимость:</strong>
+									<span class="price">от 15 000 000 руб.</span>
+								</td>
+								<td>
+									<dl>
+										<dt>Формы оплаты:</dt> <dd>100% оплата</dd>
+										<dt>Договор:</dt> <dd>договор купли-продажи.</dd>
+										<dt>Отделка:</dt> <dd>чистовая</dd>
+										<dt>Инфраструктура:</dt> <dd>Собственная парковка. Развитая инфраструктура, рядом ТЦ "Тандем", магазин оптовой торговли "МЕТРО", станция метро "Козья Слобода".</dd>
+										<dt>Вид:</dt> <dd>коммерческая недвижимость (назначение свободное)</dd>
+									</dl>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="object-photo">
+										<a href=""><img src="pic/objects/object-02.jpg" width="264" height="180" alt="image description"></a>
+									</div>
+								</td>
+								<td>
+									<strong class="description">Ресторан (готовый бизнес),<br> ул. Сулейманова, 3</strong>
+									ул. Сулейманова, 3
+								</td>
+								<td>
+									<div class="square">83,9 кв.м</div>
+									<strong class="description">Стоимость:</strong>
+									<span class="price">от 15 000 000 руб.</span>
+								</td>
+								<td>
+									<dl>
+										<dt>Формы оплаты:</dt> <dd>100% оплата</dd>
+										<dt>Договор:</dt> <dd>договор купли-продажи.</dd>
+										<dt>Отделка:</dt> <dd>чистовая</dd>
+										<dt>Инфраструктура:</dt> <dd>Собственная парковка. Развитая инфраструктура, рядом ТЦ "Тандем", магазин оптовой торговли "МЕТРО", станция метро "Козья Слобода".</dd>
+										<dt>Вид:</dt> <dd>коммерческая недвижимость (назначение свободное)</dd>
+									</dl>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="object-photo">
+										<a href=""><img src="pic/objects/object-02.jpg" width="264" height="180" alt="image description"></a>
+									</div>
+								</td>
+								<td>
+									<strong class="description">Ресторан (готовый бизнес),<br> ул. Сулейманова, 3</strong>
+									ул. Сулейманова, 3
+								</td>
+								<td>
+									<div class="square">83,9 кв.м</div>
+									<strong class="description">Стоимость:</strong>
+									<span class="price">от 15 000 000 руб.</span>
+								</td>
+								<td>
+									<dl>
+										<dt>Формы оплаты:</dt> <dd>100% оплата</dd>
+										<dt>Договор:</dt> <dd>договор купли-продажи.</dd>
+										<dt>Отделка:</dt> <dd>чистовая</dd>
+										<dt>Инфраструктура:</dt> <dd>Собственная парковка. Развитая инфраструктура, рядом ТЦ "Тандем", магазин оптовой торговли "МЕТРО", станция метро "Козья Слобода".</dd>
+										<dt>Вид:</dt> <dd>коммерческая недвижимость (назначение свободное)</dd>
+									</dl>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- object characteristics end -->
+					
+					<h2>Коммерческая недвижимость в Казани — купить или арендовать?</h2>
+					<p>Ни для кого не секрет, что одной из самых важных статей расхода бизнес-плана любого проекта является вопрос приобретения или аренды помещений под бизнес: офисных, складских, под магазин и т. д. Цены на аренду коммерческой недвижимости составляют значительную часть бюджета, поэтому возникает вопрос о целесообразности таких вложений. Посчитав стоимость аренды за несколько лет, можно прийти к неутешительному выводу, что аренда коммерческой недвижимости в конечном итоге выливается в значительную сумму, сильно влияя на конечную прибыль в сторону её уменьшения. Становится ясно, что проще однажды крупно вложиться, заинтересовавшись продажей коммерческой недвижимости, чем из года в год платить неуклонно растущую арендную плату.</p>
+					<h2>Продажа коммерческой недвижимости в Казани</h2>
+					<p>Итак, вы взвесили и просчитали все финансовые риски и прибыль, и определились, что вам выгоднее приобрести коммерческую недвижимость в Казани, нежели арендовать её. Встаёт вопрос приобретения коммерческой недвижимости. Компания «АК БАРС Недвижимость» — это продажа коммерческой недвижимости в Казани с беспроцентной рассрочкой на 3–12 месяцев, продажа в ипотечный кредит и другие, выгодные для вас, предложения в сфере продажи коммерческой недвижимости. Гибкие условия продажи, обсуждаемые в индивидуальном порядке, гарантируют, что можно подобрать вариант под любые возможности покупателя.</p>
+				</div>
+				<!-- object alternative view end -->
+			</div>
+			<!-- main holder end -->
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- main end -->
+	
+	<!-- spacer -->
+	<div class="spacer"></div>
+	<!-- spacer -->
+</div>
+<!-- wrapper end -->
+
+<!-- footer -->
+<footer class="footer">
+	<!-- footer top -->
+	<div class="footer-top">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- logo in footer -->
+			<strong class="footer-logo"><a href="#">ДОН АК Барс Недвижимость</a></strong>
+			<!-- logo in footer end -->
+			
+			<!-- navigation bar -->
+			<ul class="nav-bar-list">
+				<li>
+					<strong><a href="#">Поиск квартир</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">О компании</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Все объекты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Формы оплаты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+						<li><a href="#">Подраздел четыре</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">Пресс-центр</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong><a href="#">контакты</a></strong>
+					<ul>
+						<li><a href="#">Подраздел один</a></li>
+						<li><a href="#">Подраздел два</a></li>
+						<li><a href="#">Подраздел три</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- navigation bar end -->
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- footer top end -->
+	
+	<!-- footer bottom -->
+	<div class="footer-bottom">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- callback -->
+			<div class="callback-holder">
+				<a href="#" class="btn btn-default callback">Заказать звонок</a>
+			</div>
+			<!-- callback end -->
+			<strong class="phone"><i class="icon-call"></i><span class="phone-code">8 (843)</span> 295-77-77</strong>
+			<div class="footer-bottom-text">
+				<p><a href="#">«AkBars»</a> 2006-2014</p>
+			</div>
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- footer bottom end -->
+</footer>
+<!-- footer end -->
+
+<!-- callback form -->
+<div class="callback-form">
+	<a href="#" class="btn-close">close</a>
+	<form action="#" method="get">
+		<fieldset>
+			<strong class="title">Заказать звонок менеджера</strong>
+			<div class="form-line">
+				<div class="input-holder">
+					<input type="text" placeholder="Ваше имя" name="callback_form_name">
+				</div>
+			</div>
+			<div class="form-line">
+				<div class="input-holder">
+					<input type="text" placeholder="Ваше телефон" name="callback_form_phone">
+				</div>
+			</div>
+			<div class="submit-holder">
+				<div class="btn btn-green">
+					<span>Перезвоните мне</span>
+					<input type="submit" value="">
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- callback form end -->
+
+<!-- callback confirm -->
+<div class="callback-confirm">
+	<a href="#" class="btn-close">close</a>
+	<strong class="title">Спасибо!<br> Заявка отправлена.</strong>
+	<span class="icon-confirm"></span>
+	<div class="close-link">
+		<a href="#" class="close">закрыть</a>
+	</div>
+</div>
+<!-- callback confirm end -->
+</body>
+</html>

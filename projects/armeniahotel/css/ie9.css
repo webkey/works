@@ -1,0 +1,5 @@
+﻿.filter {
+	position:relative;
+	filter: none !important;
+	filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false) !important;
+}

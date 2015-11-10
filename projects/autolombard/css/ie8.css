@@ -1,0 +1,7 @@
+﻿body {
+	min-width: 1000px;
+}
+.footer {
+	background:none;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='img/bg/bg-footer.png', sizingmethod='scale');
+}

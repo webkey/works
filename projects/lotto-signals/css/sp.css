@@ -1,0 +1,202 @@
+/* icons */
+[class|="icon"],
+[class*=" icon-"]{ background:url(../img/sprite-icons.png) 0 0 no-repeat; }
+.icon-cart{width:18px;height:18px;background-position:-10px -10px;}
+.icon-share{width:18px;height:18px;background-position:-10px -48px;}
+.icon-accord-plus{width:20px;height:20px;background-position:-10px -86px;}
+.icon-accord-minus{width:20px;height:20px;background-position:-10px -126px;}
+.icon-play{width:75px;height:75px;background-position:-10px -166px;}
+.icon-twitter{width:19px;height:16px;background-position:-10px -261px;}
+.icon-basket{width:12px;height:16px;background-position:-10px -297px;}
+.icon-date{width:16px;height:18px;background-position:-10px -333px;}
+.icon-delete-red{width:24px;height:24px;background-position:-10px -371px;}
+.icon-delete-grey{width:22px;height:22px;background-position:-9px -1990px;}
+.icon-plus-green{width:24px;height:24px;background-position:-10px -415px;}
+.icon-plus-yellow{width:22px;height:22px;background-position:-10px -459px;}
+.icon-midday{width:24px;height:24px;background-position:-10px -501px;}
+.icon-morning{width:28px;height:14px;background-position:-10px -545px;}
+.icon-night{width:14px;height:19px;background-position:-10px -579px;}
+.icon-checkmark{width:27px;height:28px;background-position:-10px -618px;}
+.icon-checkmark-sm{width:18px;height:19px;background-position:-10px -666px;}
+.icon-home{width:14px;height:12px;background-position:-10px -705px;}
+.icon-best-odds{width:28px;height:27px;background-position:-10px -737px;}
+.icon-biggest-jackpots{width:25px;height:26px;background-position:-10px -784px;}
+.icon-shopping-cart{width:21px;height:21px;background-position:-10px -830px;}
+.icon-results{width:17px;height:14px;background-position:-10px -871px;}
+.icon-jackpots{width:20px;height:19px;background-position:-10px -905px;}
+.icon-lottery-checker{width:17px;height:17px;background-position:-10px -944px;}
+.icon-numbers-checker{width:22px;height:15px;background-position:-10px -981px;}
+.icon-list-lottery-games{width:21px;height:20px;background-position:-10px -1016px;}
+.icon-list-faq{width:19px;height:19px;background-position:-10px -1056px;}
+.icon-list-news{width:21px;height:18px;background-position:-10px -1095px;}
+.icon-list-info{width:20px;height:20px;background-position:-10px -1133px;}
+.icon-list-history{width:20px;height:18px;background-position:-10px -1173px;}
+.icon-list-rules{width:15px;height:19px;background-position:-10px -1211px;}
+.icon-list-law{width:19px;height:21px;background-position:-10px -1250px;}
+.icon-list-win{width:18px;height:19px;background-position:-10px -1291px;}
+.icon-list-taxes{width:19px;height:18px;background-position:-10px -1330px;}
+.icon-list-states{width:14px;height:20px;background-position:-10px -1368px;}
+.icon-like{width:34px;height:34px;background-position:-10px -1408px;}
+.icon-unlike{width:34px;height:34px;background-position:-10px -1462px;}
+.icon-yes{width:18px;height:18px;background-position:-10px -1516px;}
+.icon-no{width:18px;height:18px;background-position:-10px -1554px;}
+.icon-live-chat{width:14px;height:14px;background-position:-10px -1592px;}
+.icon-support{width:14px;height:11px;background-position:-10px -1626px;}
+.icon-telephone{width:12px;height:12px;background-position:-10px -1657px;}
+.icon-pin{width:10px;height:14px;background-position:-10px -1689px;}
+.icon-club-lg,
+.club.lg-size .icon-card{width:15px;height:15px;background-position:-10px -1723px;}
+.icon-club-sm,
+.club .icon-card{width:11px;height:11px;background-position:-10px -1758px;}
+.icon-diamond-lg,
+.diamond.lg-size .icon-card{width:12px;height:15px;background-position:-10px -1789px;}
+.icon-diamond-sm,
+.diamond .icon-card{width:9px;height:12px;background-position:-10px -1824px;}
+.icon-heart-lg,
+.heart.lg-size .icon-card{width:15px;height:15px;background-position:-10px -1856px;}
+.icon-heart-sm,
+.heart .icon-card{width:11px;height:11px;background-position:-10px -1891px;}
+.icon-spade-lg,
+.spade.lg-size .icon-card{width:13px;height:16px;background-position:-10px -1922px;}
+.icon-spade-sm,
+.spade .icon-card{width:9px;height:12px;background-position:-10px -1958px;}
+.icon-midday-a,
+.wining .icon-midday{width:24px;height:24px;background-position:-10px -2030px;}
+.icon-morning-a,
+.wining .icon-morning{width:28px;height:14px;background-position:-10px -2074px;}
+.icon-night-a,
+.wining .icon-night{width:14px;height:19px;background-position:-10px -2108px;}
+.icon-small-ic{width:22px;height:22px;background-position:-10px -2147px;}
+.icon-small-ic-alt{width:33px;height:33px;background-position:-7px -2189px;}
+.icon-starwhite{width:31px;height:29px;background-position:-10px -2242px;}
+.icon-plus-white-transparent{width:20px;height:20px;background-position:-10px -2291px;}
+.icon-plus-yellow-large{width:42px;height:42px;background-position:-10px -2331px;}
+.icon-anonce{width:14px;height:32px;background-position:-10px -2393px;}
+.icon-lock{width:14px;height:18px;background-position:-10px -2445px;}
+.icon-mail{width:18px;height:12px;background-position:-10px -2483px;}
+.icon-user{width:18px;height:19px;background-position:-10px -2515px;}
+.icon-ticket{width:34px;height:34px;background-position:-10px -2554px;}
+.icon-cabinet{width:18px;height:23px;background-position:-10px -2608px;}
+.icon-cabinet-active,.icon-cabinet.active,.icon-cabinet:hover{width:18px;height:23px;background-position:-10px -2651px;}
+.icon-skrin{width:20px;height:18px;background-position:-10px -2694px;}
+.icon-skrin-active,.icon-skrin:hover{width:20px;height:18px;background-position:-10px -2732px;}
+.icon-draw{width:11px;height:11px;background-position:-10px -2770px;}
+/* icons end */
+
+/* icons texts */
+[class|="icon-text"],
+[class*=" icon-text-"]{ background:url(../img/sprite-icons-texts.png) 0 0 no-repeat; }
+.icon-text-best-odds{width:153px;height:155px;background-position:-10px -10px;}
+.icon-text-biggest-jackpot{width:153px;height:155px;background-position:-10px -185px;}
+.icon-text-member-only{width:569px;height:221px;background-position:-10px -360px;}
+/* icons texts end */
+
+/* icons payment */
+[class|="icon-pay"],
+[class*=" icon-pay-"]{ background:url(../img/sprite-icons-payment.png) 0 0 no-repeat; }
+.icon-pay-visa{width:48px;height:32px;background-position:-10px -10px;}
+.icon-pay-visa-na{width:48px;height:32px;background-position:-10px -62px;}
+.icon-pay-maestro{width:48px;height:32px;background-position:-10px -114px;}
+.icon-pay-maestro-na{width:48px;height:32px;background-position:-10px -166px;}
+.icon-pay-paypal{width:48px;height:32px;background-position:-10px -218px;}
+.icon-pay-paypal-na{width:48px;height:32px;background-position:-10px -270px;}
+.icon-pay-skrill{width:48px;height:32px;background-position:-10px -322px;}
+.icon-pay-skrill-na{width:48px;height:32px;background-position:-10px -374px;}
+.icon-pay-webmoney{width:48px;height:32px;background-position:-10px -426px;}
+.icon-pay-webmoney-na{width:48px;height:32px;background-position:-10px -478px;}
+.icon-pay-qiwi{width:48px;height:32px;background-position:-10px -530px;}
+.icon-pay-qiwi-na{width:48px;height:32px;background-position:-10px -582px;}
+/* icons payment end */
+
+/* social icons */
+[class|="soc-icon"],
+[class*=" soc-icon-"]{ background:url(../img/sprite-social.png) 0 0 no-repeat; }
+.soc-icon-facebook{width:27px;height:27px;background-position:-10px -10px;}
+.soc-icon-twitter{width:33px;height:26px;background-position:-10px -57px;}
+.soc-icon-facebook-color{width:27px;height:27px;background-position:-10px -103px;}
+.soc-icon-twitter-color{width:28px;height:24px;background-position:-10px -150px;}
+.soc-icon-google-plus-color{width:28px;height:27px;background-position:-10px -194px;}
+.soc-icon-facebook-white { width: 29px; height: 29px; background-position: -10px -241px; }
+.soc-icon-twitter-white { width: 30px; height: 24px; background-position: -10px -290px; }
+.soc-icon-google-plus-white { width: 29px; height: 28px; background-position: -10px -334px; }
+.soc-icon-facebook-white-sm { width: 20px; height: 20px; background-position: -10px -382px; }
+.soc-icon-twitter-white-sm { width: 20px; height: 17px; background-position: -10px -422px; }
+.soc-icon-google-plus-white-sm { width: 20px; height: 20px; background-position: -10px -459px; }
+/* social icons end */
+
+/* icons-flags */
+[class|="icon-flag"],
+[class*=" icon-flag-"]{ background:url(../img/sprite-icons-flags.png) 0 0 no-repeat; }
+.icon-flag-english{background-position:0 0;width:16px;height:11px;}
+.icon-flag-chinese{background-position:0 -31px;width:16px;height:11px;}
+.icon-flag-arabic{background-position:0 -62px;width:16px;height:11px;}
+.icon-flag-french{background-position:0 -93px;width:16px;height:11px;}
+.icon-flag-usa{background-position:0 -124px;width:16px;height:14px;}
+.icon-flag-australia{background-position:0 -158px;width:16px;height:14px;}
+.icon-flag-austria{background-position:0 -192px;width:16px;height:14px;}
+.icon-flag-germany{background-position:0 -226px;width:16px;height:14px;}
+.icon-flag-canada{background-position:0 -260px;width:16px;height:14px;}
+.icon-flag-colombia{background-position:0 -294px;width:16px;height:14px;}
+.icon-flag-europe{background-position:0 -328px;width:16px;height:14px;}
+.icon-flag-france{background-position:0 -362px;width:16px;height:14px;}
+.icon-flag-greece{background-position:0 -396px;width:16px;height:14px;}
+.icon-flag-ireland{background-position:0 -430px;width:16px;height:14px;}
+.icon-flag-new-zealand{background-position:0 -464px;width:16px;height:14px;}
+.icon-flag-poland{background-position:0 -498px;width:16px;height:14px;}
+.icon-flag-romania{background-position:0 -532px;width:16px;height:14px;}
+.icon-flag-russia{background-position:0 -566px;width:16px;height:14px;}
+.icon-flag-south-africa{background-position:0 -600px;width:16px;height:14px;}
+.icon-flag-south-swiss{background-position:0 -634px;width:16px;height:14px;}
+.icon-flag-spain{background-position:0 -668px;width:16px;height:14px;}
+.icon-flag-uk{background-position:0 -702px;width:16px;height:14px;}
+.icon-flag-ua{background-position:0 -736px;width:16px;height:14px;}
+.icon-flag-usa-alt{background-position:0 -770px;width:16px;height:14px;}
+.icon-flag-english-lg{background-position:0 -804px;width:32px;height:25px;}
+.icon-flag-english-lgst{background-position:0 -849px;width:48px;height:36px;}
+.icon-flag-chinese-lg{background-position:0 -905px;width:32px;height:25px;}
+.icon-flag-chinese-lgst{background-position:0 -950px;width:48px;height:36px;}
+.icon-flag-arabic-lg{background-position:0 -1006px;width:32px;height:25px;}
+.icon-flag-arabic-lgst{background-position:0 -1051px;width:48px;height:36px;}
+.icon-flag-french-lg{background-position:0 -1107px;width:32px;height:25px;}
+.icon-flag-french-lgst{background-position:0 -1152px;width:48px;height:36px;}
+/* icons-flags end */
+
+/* arrows */
+[class|="arrow"],
+[class*=" arrow-"]{ background:url(../img/sprite-arrows.png) 0 0 no-repeat; }
+.arrow-slide-prev{width:52px;height:52px;background-position:-11px -11px;}
+.arrow-slide-next{width:52px;height:52px;background-position:-11px -85px;}
+.arrow-close{width:35px;height:35px;background-position:-11px -159px;}
+.arrow-drop-corner{width:22px;height:14px;background-position:-11px -216px;}
+.arrow-close-dark{width:35px;height:35px;background-position:-11px -252px;}
+.arrow-list-active{width:12px;height:8px;background-position:-11px -309px;}
+.arrow-lotto-lovers{width:66px;height:39px;background-position:-11px -339px;}
+.arrow-list{width:12px;height:8px;background-position:-11px -400px;}
+.arrow-datepicker-left{width:20px;height:20px;background-position:-11px -430px;}
+.arrow-datepicker-right{width:20px;height:20px;background-position:-11px -472px;}
+.arrow-drop{width:15px;height:24px;background-position:-11px -514px;}
+.arrow-drop-active, .arrow-drop.active{width:24px;height:15px;background-position:-11px -560px;}
+.arrow-drop-corner-lg{width:36px;height:22px;background-position:-11px -597px;}
+.arrow-select-drop{width:8px;height:4px;background-position:-11px -641px;}
+.arrow-counter{width:59px;height:57px;background-position:-11px -667px;}
+/* arrows end */
+
+/* form icons */
+[class|="icon-form"],
+[class*=" icon-form-"]{ background:url(../img/sprite-forms.png) 0 0 no-repeat; }
+.icon-form-checkbox-checked{width:20px;height:20px;background-position:-10px -10px;}
+.icon-form-checkbox-unchecked{width:20px;height:20px;background-position:-10px -50px;}
+/* form icons end */
+
+/* stars */
+[class|="icon-star"],
+.icon-star,
+[class*=" icon-star-"]{ background:url(../img/sprite-rating.png) 0 0 no-repeat; }
+.icon-star-empty{background-position:0 0;width:110px;height:16px;}
+.icon-star-full{background-position:0 -36px;width:110px;height:16px;}
+/* stars end */
+
+/* corners */
+[class|="corner"],
+[class*=" corner-"]{ background:url(../img/sprite-corners.png) 0 0 no-repeat; }
+/* corners end */

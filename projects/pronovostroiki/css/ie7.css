@@ -1,0 +1,35 @@
+﻿.header-top{
+	zoom: 1;
+}
+.search-box .tab-controls li.active a i{
+	zoom:1;
+	*display:inline;
+	vertical-align:top;
+}
+.advanced-filters .to-metro,
+.option-list label,
+.building-carousel,
+.breadcrumbs,
+.building-info-list li{
+	zoom: 1;
+}
+.prices-unit {
+	padding: 8px 10px 23px;
+}
+.social-list a{
+	text-indent: 0;
+	line-height: 0;
+	z-index: 0;
+}
+.search-box .tab-controls li, .calculator .tab-controls li{
+	width: 49.7%;
+}
+.default-list li{
+	background: url(../img/bullet-list.png) no-repeat 0 7px;
+}
+.events-list li{
+	background: url(../img/bullet-events.png) no-repeat 0 2px;
+}
+.sorting-list li{
+	zoom: 1;
+}

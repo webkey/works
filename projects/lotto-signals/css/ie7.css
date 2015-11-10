@@ -1,0 +1,57 @@
+﻿/*normalize.css v1.1.3 extract for ie7*/
+audio, canvas, progress, video{
+	display: inline;
+	zoom: 1;
+}
+img{ -ms-interpolation-mode: bicubic; }
+button, html input[type="button"],
+input[type="reset"],
+input[type="submit"]{ overflow: visible; }
+input[type="checkbox"],
+input[type="radio"]{
+	height: 13px;
+	width: 13px;
+}
+legend{ margin-left: -7px; }
+p, pre{ margin: 1em 0; }
+em, i { font-style:italic; }
+b, strong{ font-weight: bold; }
+dl, menu, ol, ul{ margin: 1em 0; }
+dd{ margin: 0 0 0 40px; }
+menu, ol, ul{ padding: 0 0 0 40px; }
+nav ul, nav ol{
+	list-style: none;
+	list-style-image: none;
+}
+* + html a,
+* + html button,
+* + html input[type="submit"],
+* + html input[type="radio"],
+* + html input[type="checkbox"],
+* + html input[type="button"]{
+	noFocusLine: expression(this.onFocus=this.blur());
+}
+/*normalize.css v1.1.3 extract for ie7 end*/
+
+.default-list li
+{behavior:expression(!this.isInserted==true ? this.isInserted=(this.insertBefore(document.createElement("after"))) : '');}
+.decimal-list li
+{
+	behavior: expression(
+		(this.listFlag!=null ? this.listFlag=true : (
+			(function(t){
+				if (t.parentNode.tagName == 'OL') {
+					var txt = '№'+(++t.parentNode.IEcounter || (t.parentNode.IEcounter = 1));
+					if (!t.childNodes.length) {
+						t.innerHTML = '<before>'+txt+'</before>';
+					} else {
+						t.before = document.createElement("before");
+						t.before.appendChild(document.createTextNode(txt));
+						t.insertBefore(t.before,t.childNodes(0));
+					}
+					t.style.behavior= '';
+				}
+			})(this)
+		),this.listFlag=true)
+	);
+}

@@ -1,0 +1,38 @@
+﻿.filter-search{
+	zoom: 1;
+}
+.pairs{
+	position: relative;
+	zoom: 1;
+}
+.social-networks a{
+	display: block;
+	float: left;
+}
+.paging li {
+	margin: 0 4px 0 4px;
+}
+.datepicker-box input[type="text"]{
+	line-height: 28px;
+}
+.results-list > li{
+	margin-left: 0;
+}
+.main-holder *{
+	zoom: 1;
+}
+.question-buttons .btn-rent{
+	padding: 3px 44px 8px;
+}
+.question-buttons .btn-callback{
+	padding: 3px 36px 8px;
+}
+.contacts-footer .btn-callback{
+	padding: 1px 10px 5px;
+}
+.btn-filter{
+	padding: 7px 15px 10px;
+}
+.visual-preview{
+	width: 104px;
+}

@@ -1,0 +1,31 @@
+﻿.header{
+	background: url(../img/bg/bg-header.png);
+}
+.header-holder{
+	background: url(../img/bg/top-glow.png) no-repeat 50% 0;
+}
+.reservation-form .input-holder,
+.reservation-form .input-holder.focus{
+	background: #1e2532;;
+}
+.reservation-form .input-holder:hover{
+	border-color: #555761;
+	background: #273041;
+}
+.reservation-form .input-holder.click{
+	border-color: #555761;
+	background: #1f2633;;
+}
+.main-wrap{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c91a2128', endColorstr='#c91a2128',GradientType=0 );
+}
+.mask-zoom,
+.btn-zoom{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e61a2738', endColorstr='#e61a2738',GradientType=0 );
+}
+.attraction-img{
+	border: 3px solid #6d4647;
+}
+.attraction-item a:hover .attraction-img{
+	border-color: #90463f;
+}

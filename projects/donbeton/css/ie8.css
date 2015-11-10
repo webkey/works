@@ -1,0 +1,22 @@
+﻿/*.intro {
+	background:none;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='img/bg/bg-sections/bg-section-intro.jpg', sizingmethod='scale');
+}*/
+body {min-width: 1003px;}
+.intro-heading,
+.price-table .thead-bg,
+.reviews-holder{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e21b00', endColorstr='#80e21b00',GradientType=0 );
+}
+.aside .info-form-frame{
+	filter: none !important;
+	filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false) !important;
+}
+.info-form-frame{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
+}
+.price-table td{
+	border: none;
+	background: url(../img/bg/line-dotted.png) repeat-x 50% 0;
+}
+.price-table tbody tr:first-child td{background: none;}

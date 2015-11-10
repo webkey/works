@@ -1,0 +1,9 @@
+﻿.btn-green,
+.info-description .info-box .mask {
+	position:relative;
+	filter: none !important;
+	filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false) !important;
+}
+.info-description .info-box .mask{
+	position: absolute;
+}

@@ -1,0 +1,5 @@
+.01_1-checkbox-unchecked{ background-position: 0 0; width: 19px; height: 19px; } 
+.02_1-checkbox-checked{ background-position: 0 -39px; width: 19px; height: 19px; } 
+.03_1-checkbox-disabled{ background-position: 0 -78px; width: 19px; height: 19px; } 
+
+SPACE - 20px

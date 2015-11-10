@@ -1,0 +1,1107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spain4joy - Аренда</title>
+<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+
+<!-- favicon -->
+<link href="favicon.ico" rel="shortcut icon">
+
+<!-- main style -->
+<link href="css/widgets.css" rel="stylesheet" media="screen">
+<link href="css/all.css" rel="stylesheet" media="screen">
+
+<!-- style for IE -->
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" media="screen, projection"><![endif]-->
+
+<!-- jquery library -->
+<script src="js/jquery-1.8.2.min.js"></script>
+<!-- ui -->
+<script src="js/jquery-ui-1.9.0.custom.min.js"></script>
+<!-- widgets -->
+<script src="js/widgets.js"></script>
+<!-- main functions -->
+<script src="js/functions.js"></script>
+<!-- inclued googl map -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<header class="header">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- logo -->
+			<strong class="logo"><a href="#">spain4joy</a></strong>
+			<!-- header wrap -->
+			<div class="header-wrap">
+				<!-- header holder -->
+				<div class="header-holder">
+					<!-- slogan -->
+					<span class="slogan">Начни новую жизнь в Испании!</span>
+					
+					<!-- languages -->
+					<ul class="language-list">
+						<li><a href="#" class="lang-es"></a></li>
+						<li><a href="#" class="lang-ru"></a></li>
+						<li><a href="#" class="lang-en"></a></li>
+					</ul>
+					<!-- languages end -->
+					
+					<!-- contact us -->
+					<div class="contact-us">
+						<span class="description">Связаться с нами:</span>
+						<span class="skype"><i class="icon-skype"></i><a href="mailto:info@spain4joy.ru">info@spain4joy.ru</a></span>
+					</div>
+					<!-- contact us end -->
+				</div>
+				<!-- header holder end -->
+				
+				<!-- main navigation -->
+				<div class="nav-holder">
+					<nav class="nav">
+						<div class="phone-header">
+							<strong class="phone">+7 <span class="phone-code">499</span> 256 16 46</strong>
+						</div>
+						<ul class="nav-list">
+							<li class="active"><a href="#">Аренда</a></li>
+							<li><a href="#">Продажа</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Полезная информация</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- main navigation end -->
+			</div>
+			<!-- header wrap end -->
+		</div>
+		<!-- max-wrap end -->
+	</header>
+	<!-- header end -->
+	
+	<!-- main -->
+	<div class="main">
+		<!-- max-wrap -->
+		<div class="max-wrap">
+			<!-- filter box -->
+			<div class="filter-box">
+				<!-- filter search -->
+				<div class="filter-search minimized">
+					<h2><span class="arrow-corner-blue"></span>Найти дом для новой жизни</h2>
+					
+					<!-- opener filter -->
+					<div class="opener-filter filter-opener">
+						<a href="#"><span>Развернуть поиск</span><i class="arrow-result-search"></i></a>
+					</div>
+					<!-- opener filter end -->
+					
+					<!-- tabs wrap -->
+					<div class="tabs-wrap">
+						<!-- tab controls -->
+						<div class="tab-controls-holder">
+							<div class="tab-controls-wrap">
+								<ul class="tab-controls">
+									<li><a href="#">аренда</a></li>
+									<li class="active"><a href="#">продажа</a></li>
+								</ul>
+								<span class="tab-active"></span>
+							</div>
+						</div>
+						<!-- tab controls end -->
+						
+						<!-- tabs -->
+						<div class="tabs">
+							<div class="tab">
+								<!-- filter form -->
+								<div class="filter-form">
+									<form action="#" method="get">
+										<fieldset>
+											<!-- row -->
+											<div class="row">
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-city">Выберите город</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-city">
+															<option value="1">&nbsp;</option>
+															<option value="2">город 1</option>
+															<option value="3">город 2</option>
+															<option value="4">город 3</option>
+															<option value="5">город 4</option>
+															<option value="6">город 5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-region">Выберите район</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-region">
+															<option value="1">&nbsp;</option>
+															<option value="2">район 1</option>
+															<option value="3">район 2</option>
+															<option value="4">район 3</option>
+															<option value="5">район 4</option>
+															<option value="6">район 5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-type">Выберите тип недвижимости</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-type">
+															<option value="1">&nbsp;</option>
+															<option value="2">тип недвижимости 1</option>
+															<option value="3">тип недвижимости 2</option>
+															<option value="4">тип недвижимости 3</option>
+															<option value="5">тип недвижимости 4</option>
+															<option value="6">тип недвижимости 5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="id">Поиск по ID</label>
+													</div>
+													<div class="input-holder">
+														<input type="text" placeholder="" id="id">
+													</div>
+												</div>
+											</div>
+											<!-- row end -->
+											
+											<!-- row -->
+											<div class="row details-filter">
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-bedroom">Количество спален</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-bedroom">
+															<option value="1">&nbsp;</option>
+															<option value="2">1</option>
+															<option value="3">2</option>
+															<option value="4">3</option>
+															<option value="5">4</option>
+															<option value="6">5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-bathroom">Ванных комнат</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-bathroom">
+															<option value="1">&nbsp;</option>
+															<option value="2">1</option>
+															<option value="3">2</option>
+															<option value="4">3</option>
+															<option value="5">4</option>
+															<option value="6">5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-guests">Количество гостей</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-guests">
+															<option value="1">&nbsp;</option>
+															<option value="2">1</option>
+															<option value="3">2</option>
+															<option value="4">3</option>
+															<option value="5">4</option>
+															<option value="6">5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder medium-size">
+													<div class="label-holder">
+														<label for="select-distance-sea">Расстояние до моря</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-distance-sea">
+															<option value="1">&nbsp;</option>
+															<option value="2">100 m</option>
+															<option value="3">200 m</option>
+															<option value="4">300 m</option>
+															<option value="5">400 m</option>
+															<option value="6">500 m</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder medium-size">
+													<div class="label-holder">
+														<label for="select-distance-airport">Расстояние до Аэропорта</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-distance-airport">
+															<option value="1">&nbsp;</option>
+															<option value="2">1 km</option>
+															<option value="3">2 km</option>
+															<option value="4">3 km</option>
+															<option value="5">4 km</option>
+															<option value="6">5 km</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder medium-size">
+													<div class="label-holder">
+														<label for="select-landscape">Вид<br></label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-landscape">
+															<option value="1">&nbsp;</option>
+															<option value="2">Вид 1</option>
+															<option value="3">Вид 2</option>
+															<option value="4">Вид 3</option>
+															<option value="5">Вид 4</option>
+															<option value="6">Вид 5</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<!-- row end -->
+											
+											<!-- filter option -->
+											<div class="filter-option">
+												<!-- price slider -->
+												<div class="price-slider">
+													<div class="slider-range"></div>
+												</div>
+												<!-- price slider end -->
+												
+												<!-- radio list -->
+												<ul class="radio-list">
+													<li>
+														<div class="label-holder">
+															<label for="rub">Rub</label>
+														</div>
+														<input class="def-radio" type="radio" name="currency" id="rub" checked>
+													</li>
+													<li>
+														<div class="label-holder">
+															<label for="eur">Eur</label>
+														</div>
+														<input class="def-radio" type="radio" name="currency" id="eur">
+													</li>
+												</ul>
+												<!-- radio list end -->
+											</div>
+											<!-- filter option end -->
+											
+											<!-- filters button -->
+											<div class="btn btn-filter">
+												<span>Искать</span>
+												<input type="submit" value="">
+											</div>
+											<!-- filters button end -->
+										</fieldset>
+									</form>
+								</div>
+								<!-- filter form end -->
+							</div>
+							
+							<div class="tab">
+								<!-- filter form -->
+								<div class="filter-form">
+									<form action="#" method="get">
+										<fieldset>
+											<!-- row -->
+											<div class="row">
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-city-dupl">Выберите город</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-city-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">город 1</option>
+															<option value="3">город 2</option>
+															<option value="4">город 3</option>
+															<option value="5">город 4</option>
+															<option value="6">город 5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-region-dupl">Выберите район</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-region-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">район 1</option>
+															<option value="3">район 2</option>
+															<option value="4">район 3</option>
+															<option value="5">район 4</option>
+															<option value="6">район 5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-type-dupl">Выберите тип недвижимости</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-type-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">тип недвижимости 1</option>
+															<option value="3">тип недвижимости 2</option>
+															<option value="4">тип недвижимости 3</option>
+															<option value="5">тип недвижимости 4</option>
+															<option value="6">тип недвижимости 5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="id-dupl">Поиск по ID</label>
+													</div>
+													<div class="input-holder">
+														<input type="text" placeholder="" id="id-dupl">
+													</div>
+												</div>
+											</div>
+											<!-- row end -->
+											
+											<!-- row -->
+											<div class="row details-filter">
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-bedroom-dupl">Количество спален</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-bedroom-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">1</option>
+															<option value="3">2</option>
+															<option value="4">3</option>
+															<option value="5">4</option>
+															<option value="6">5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-bathroom-dupl">Ванных комнат</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-bathroom-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">1</option>
+															<option value="3">2</option>
+															<option value="4">3</option>
+															<option value="5">4</option>
+															<option value="6">5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder">
+													<div class="label-holder">
+														<label for="select-guests-dupl">Количество гостей</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-guests-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">1</option>
+															<option value="3">2</option>
+															<option value="4">3</option>
+															<option value="5">4</option>
+															<option value="6">5</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder medium-size">
+													<div class="label-holder">
+														<label for="select-distance-sea-dupl">Расстояние до моря</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-distance-sea-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">100 m</option>
+															<option value="3">200 m</option>
+															<option value="4">300 m</option>
+															<option value="5">400 m</option>
+															<option value="6">500 m</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder medium-size">
+													<div class="label-holder">
+														<label for="select-distance-airport-dupl">Расстояние до Аэропорта</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-distance-airport-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">1 km</option>
+															<option value="3">2 km</option>
+															<option value="4">3 km</option>
+															<option value="5">4 km</option>
+															<option value="6">5 km</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="select-holder medium-size">
+													<div class="label-holder">
+														<label for="select-landscape-dupl">Вид</label>
+													</div>
+													<div class="bselect">
+														<select class="cselect" name="select" id="select-landscape-dupl">
+															<option value="1">&nbsp;</option>
+															<option value="2">Вид 1</option>
+															<option value="3">Вид 2</option>
+															<option value="4">Вид 3</option>
+															<option value="5">Вид 4</option>
+															<option value="6">Вид 5</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<!-- row end -->
+											
+											<!-- filter option -->
+											<div class="filter-option">
+												<!-- price slider -->
+												<div class="price-slider">
+													<div class="slider-range"></div>
+												</div>
+												<!-- price slider end -->
+												
+												<!-- radio list -->
+												<ul class="radio-list">
+													<li>
+														<div class="label-holder">
+															<label for="rub-dupl">Rub</label>
+														</div>
+														<input class="def-radio" type="radio" name="currency" id="rub-dupl" checked>
+													</li>
+													<li>
+														<div class="label-holder">
+															<label for="eur-dupl">Eur</label>
+														</div>
+														<input class="def-radio" type="radio" name="currency" id="eur-dupl">
+													</li>
+												</ul>
+												<!-- radio list end -->
+											</div>
+											<!-- filter option end -->
+											
+											<!-- filters button -->
+											<div class="btn btn-filter">
+												<span>Искать</span>
+												<input type="submit" value="">
+											</div>
+											<!-- filters button end -->
+										</fieldset>
+									</form>
+								</div>
+								<!-- filter form end -->
+							</div>
+						</div>
+						<!-- tabs end -->
+					</div>
+					<!-- tabs wrap end -->
+					
+					<!-- opener filter -->
+					<div class="opener-filter filter-closer">
+						<a href="#"><span>Свернуть поиск</span><i class="arrow-search-close"></i></a>
+					</div>
+					<!-- opener filter end -->
+				</div>
+				<!-- filter search end -->
+			</div>
+			<!-- filter box end -->
+				
+			<!-- main holder -->
+			<div class="main-holder">
+				<!-- main content wrapper -->
+				<div class="content-wrap">
+					<!-- main content -->
+					<div class="content">
+						<!-- object area -->
+						<div class="object-area">
+							<!-- breadcrumbs -->
+							<ul class="breadcrumbs">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Аренда</a></li>
+								<li>Вилла 1698</li>
+							</ul>
+							<!-- breadcrumbs end -->
+							
+							<!-- object heading -->
+							<div class="object-heading">
+								<span class="id">ID 60903516</span>
+								<div class="title">
+									<h1>Марбелья, Михас Хоста. <span class="name">Вилла 1698</span> </h1>
+								</div>
+							</div>
+							<!-- object heading end -->
+							
+							<!-- caption object -->
+							<section class="object-caption">
+								<!-- object option -->
+								<div class="object-option">
+									<!-- object price -->
+									<div class="object-price">
+										<h3>Цена за сутки</h3>
+										<div class="price-holder">
+											<!-- radio list -->
+											<ul class="radio-list">
+												<li>
+													<div class="label-holder">
+														<label for="price-rub">Rub</label>
+													</div>
+													<input class="def-radio" type="radio" name="currency" id="price-rub" checked>
+												</li>
+												<li>
+													<div class="label-holder">
+														<label for="price-eur">Eur</label>
+													</div>
+													<input class="def-radio" type="radio" name="currency" id="price-eur">
+												</li>
+											</ul>
+											<!-- radio list end -->
+											
+											<!-- price -->
+											<div class="price">
+												<div class="del">
+													<del>
+														1 740 000
+														<i class="crossing">
+															<img src="img/bg/crossing.png" alt="">
+														</i>
+													</del>
+												</div>
+												<ins>1 740 000</ins>
+											</div>
+											<!-- price end -->
+										</div>
+									</div>
+									<!-- object price end -->
+									
+									<!-- object buttons -->
+									<div class="object-buttons">
+										<a href="#" class="btn btn-favorites"><i class="icon-star"></i>В избранное</a>
+										<a href="#" class="btn btn-rent">Арендовать</a>
+									</div>
+									<!-- object buttons end -->
+								</div>
+								<!-- object option end -->
+								
+								<!-- preview carousel -->
+								<div class="object-visual">
+									<!-- object image -->
+									<div class="object-img">
+										<a href="#"><img src="pic/preview-carousel/large/img-01.jpg" width="416" height="313" alt="image description"></a>
+									</div>
+									<!-- object image end -->
+									
+									<!-- preview carousel -->
+									<div class="visual-preview">
+										<ul class="preview-carousel">
+											<li>
+												<a href="pic/preview-carousel/large/img-01.jpg"><img src="pic/preview-carousel/small/img-01.jpg" width="104" height="78" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/preview-carousel/large/img-02.jpg"><img src="pic/preview-carousel/small/img-02.jpg" width="104" height="78" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/preview-carousel/large/img-03.jpg"><img src="pic/preview-carousel/small/img-03.jpg" width="104" height="78" alt="image description"></a>
+											</li>
+											<li>
+												<a href="pic/preview-carousel/large/img-04.jpg"><img src="pic/preview-carousel/small/img-04.jpg" width="104" height="78" alt="image description"></a>
+											</li>
+										</ul>
+									</div>
+									<!-- preview carousel end -->
+								</div>
+								<!-- preview carousel end -->
+							</section>
+							<!-- caption object end -->
+							
+							<!-- object box -->
+							<section class="object-holder">
+								<!-- object content -->
+								<div class="object-wrap">
+									<div class="object-content">
+										<div class="object-content-text">
+											<p>Вилла в аренду на самом живописном берегу средиземного моря. Она находится всего в 200 метрах от лазурного песчаного берега.</p>
+											<p>В самом центре городка Марбельи...</p>
+											<p>Бассейн, ночная подсветка и горячий испанский воздух Коста-Дель-Соль вдохновляют тысячи людей, посетивших это уютное место.</p>
+											<p>Каждый день становится совершенно незабываемым, а ночи яркими и насыщенными. Вы сразу почувствуете всю красоту и совершенство одного из самых манящих мест в мире - побережья Испании...</p>
+										</div>
+										<!-- tabs object -->
+										<div class="tabs-wrap">
+											<!-- tab controls -->
+											<ul class="tab-controls">
+												<li class="active"><a href="#">Карта</a></li>
+												<li><a href="#">Панорама</a></li>
+												<li><a href="#">ВИДЕО</a></li>
+											</ul>
+											<!-- tab controls end -->
+											
+											<!-- tabs -->
+											<div class="tabs">
+												<div class="tab">
+													<!-- map -->
+													<div id="map" class="map" data-zoom="15" data-right="-3.876311" data-left="36.753278"></div>
+													<!-- map end -->
+												</div>
+												
+												<div class="tab">
+													<div class="panorama">
+														<img src="pic/panorama.jpg" width="506" height="326" alt="image description">
+													</div>
+												</div>
+												
+												<div class="tab">
+													<iframe width="100%" height="326" src="http://www.youtube.com/embed/dU2Pmo1cWwg?fs=1&amp;wmode=transparent" frameborder="0"></iframe>
+												</div>
+											</div>
+											<!-- tabs end -->
+										</div>
+										<!-- tabs object end -->
+									</div>
+								</div>
+								<!-- object content end -->
+								
+								<!-- object aside -->
+								<aside class="object-aside">
+									<h3>Особенности:</h3>
+									<!-- features list -->
+									<ul class="features-list">
+										<li><span class="meaning"><i class="icon-area"></i> Жилая площадь</span>      <span class="definition">109 m<sup>2</sup></span></li>
+										<li><span class="meaning"><i class="icon-garage"></i>Гаражных мест</span>          <span class="definition">3</span></li>
+										<li><span class="meaning"><i class="icon-bath"></i>Ванных комнат</span>         <span class="definition">2</span></li>
+										<li><span class="meaning"><i class="icon-bed"></i>Кол-во спален</span>          <span class="definition">3</span></li>
+										<li><span class="meaning"><i class="icon-pool"></i>Бассейн</span>                     <span class="definition">Есть</span></li>
+										<li><span class="meaning"><i class="icon-floor"></i>Этажей</span>                      <span class="definition">1</span></li>
+										<li><span class="meaning"><i class="icon-balcony"></i>Балкон</span>                       <span class="definition">Нет</span></li>
+										<li><span class="meaning"><i class="icon-air"></i>Кондиционер</span>           <span class="definition">Есть</span></li>
+										<li><span class="meaning"><i class="icon-garden"></i>Сад</span>                             <span class="definition">Есть</span></li>
+										<li><span class="meaning"><i class="icon-furniture"></i>Мебель</span>                      <span class="definition">Есть</span></li>
+										<li><span class="meaning"><i class="icon-appliances"></i>Элеткроприборы</span>      <span class="definition">Есть</span></li>
+										<li><span class="meaning"><i class="icon-veranda"></i>Веранда</span>                    <span class="definition">Есть</span></li>
+										<li><span class="meaning"><i class="icon-barbecue"></i>Барбекю</span>                     <span class="definition">Есть</span></li>
+										<li><span class="meaning"><i class="icon-wifi"></i>Wi-Fi</span>                           <span class="definition">Есть</span></li>
+									</ul>
+									<!-- features list end -->
+									<h3>Расстояние:</h3>
+									<!-- distances list -->
+									<ul class="distances-list">
+										<li><span class="meaning">До пляжа:</span>                              <span class="definition">1км</span></li>
+										<li><span class="meaning">До гольф-поля:</span>                     <span class="definition">3км</span></li>
+										<li><span class="meaning">До аэропорта:</span>                       <span class="definition">47км</span></li>
+										<li><span class="meaning">До магазина:</span>                        <span class="definition">300м</span></li>
+										<li><span class="meaning">До супермаркета:</span>                 <span class="definition">300м</span></li>
+										<li><span class="meaning">До банка:</span>                               <span class="definition">500м</span></li>
+										<li><span class="meaning">До бара/ресторана:</span>              <span class="definition">200м</span></li>
+										<li><span class="meaning">До теннисного корта:</span>          <span class="definition">500м</span></li>
+									</ul>
+									<!-- distances list end -->
+								</aside>
+								<!-- object aside end -->
+							</section>
+							<!-- object box end -->
+							
+							<!-- availability calendar -->
+							<section class="availability">
+								<div class="availability-holder">
+									<h2>Календарь занятости</h2>
+									<div class="availability-content">
+										<img src="pic/plugins/calendars.jpg" width="617" height="214" alt="image description">
+									</div>
+								</div>
+							</section>
+							<!-- availability calendar end -->
+							
+							<!-- still question -->
+							<section class="still-question">
+								<span class="title"><i class="arrow-last-questions"></i>Остались вопросы? Закажите бесплатный звонок, и мы вам перезвоним.</span>
+								<!-- question buttons -->
+								<div class="question-buttons">
+									<a href="#callback-popup" class="btn btn-callback callback">Заказать звонок</a>
+									<a href="#" class="btn btn-rent">Нет вопросов, перейти к аренде</a>
+								</div>
+								<!-- question buttons end -->
+							</section>
+							<!-- still question end -->
+						</div>
+						<!-- object area -->
+					</div>
+					<!-- main content end -->
+				</div>
+				<!-- main content wrapper end -->
+				
+				<!-- sidebar -->
+				<aside class="sidebar">
+					<!-- favorites -->
+					<div class="widget favorites">
+						<h3>Мое избранное</h3>
+						<div class="favorite-img">
+							<a href="#"><img src="pic/favorites/img-01.jpg" width="230" height="188" alt="image description"></a>
+						</div>
+						<span class="favorite-title">Вилла 609  Марбелья. Михас Хоста</span>
+						<a href="#" class="btn btn-favorite">1, 740 €/сутки <i class="arrow-favorite"></i></a>
+					</div>
+					<!-- favorites end -->
+					
+					<!-- promo slider -->
+					<div class="widget promo-box">
+						<ul class="promo-slider">
+							<li>
+								<a href="#"><img src="pic/promo-slider/img-01.jpg" width="238" height="383" alt="image description"></a>
+							</li>
+							<li>
+								<a href="#"><img src="pic/promo-slider/img-02.jpg" width="238" height="383" alt="image description"></a>
+							</li>
+							<li>
+								<a href="#"><img src="pic/promo-slider/img-03.jpg" width="238" height="383" alt="image description"></a>
+							</li>
+							<li>
+								<a href="#"><img src="pic/promo-slider/img-04.jpg" width="238" height="383" alt="image description"></a>
+							</li>
+							<li>
+								<a href="#"><img src="pic/promo-slider/img-05.jpg" width="238" height="383" alt="image description"></a>
+							</li>
+							<li>
+								<a href="#"><img src="pic/promo-slider/img-06.jpg" width="238" height="383" alt="image description"></a>
+							</li>
+						</ul>
+					</div>
+					<!-- promo slider end -->
+					
+					<!-- weather box -->
+					<div class="widget">
+						<div class="weather-box temperature">
+							<!-- temp -->
+							<div class="temp">
+								<span class="temp-value">27 <i class="icon-celsius-yellow"></i></span>
+								<div class="temp-city">
+									<div class="temp-visual">
+										<img src="pic/weather-icons/icon-01.png" width="48" height="41" alt="image description">
+									</div>
+									<span class="city-name">Марбелья</span>
+								</div>
+							</div>
+							<!-- temp end -->
+							
+							<!-- temp title -->
+							<div class="temp-title">
+								<div class="temp-visual">
+									<span class="temp-value">-19 <i class="sup">&deg;</i></span>
+									<img src="pic/weather-icons/icon-02.png" width="25" height="26" alt="image description">
+								</div>
+								<span class="city-name">Москва</span>
+							</div>
+							<!-- temp title end -->
+						</div>
+						
+						<div class="weather-box datepicker-box">
+							<div class="input-holder">
+								<input type="text" class="date-today">
+							</div>
+							<div class="datepicker"></div>
+						</div>
+					</div>
+					<!-- weather box end -->
+					
+					<!-- social networks -->
+					<div class="social-holder">
+						<h4>Мы в соцсетях</h4>
+						<ul class="social-networks">
+							<li><a href="#" class="soc-icon-twitter">vk</a></li>
+							<li><a href="#" class="soc-icon-facebook">odnoklassniki</a></li>
+							<li><a href="#" class="soc-icon-vk">facebook</a></li>
+							<li><a href="#" class="soc-icon-google-plus">twitter</a></li>
+							<li><a href="#" class="soc-icon-ok">google-plus</a></li>
+						</ul>
+					</div>
+					<!-- social networks end -->
+				</aside>
+				<!-- sidebar -->
+			</div>
+			<!-- main holder end -->
+			
+			<!-- lastminute offers -->
+			<section class="offers">
+				<h2>Горящие предложения</h2>
+				<!-- offers carousel -->
+				<div class="lastminute-offers">
+					<ul class="offers-carousel">
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-01.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Продажа</span>
+									<p><del>5 000</del>E</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-02.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Продажа</span>
+									<p><del>5 000</del>E</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-03.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Продажа</span>
+									<p><del>5 000</del>E</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-04.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Продажа</span>
+									<p><del>5 000</del>E</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-05.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Аренда</span>
+									<p><del>2 500</del>E/сутки</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-05.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Аренда</span>
+									<p><del>2 500</del>E/сутки</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-01.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Продажа</span>
+									<p><del>5 000</del>E</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-02.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Продажа</span>
+									<p><del>5 000</del>E</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<div class="offers-img">
+									<img src="pic/lastminute-offers/img-03.jpg" width="140" height="140" alt="image description">
+									<span class="mask-overlay"></span>
+								</div>
+								<div class="offers-text">
+									<span class="title">Продажа</span>
+									<p><del>5 000</del>E</p>
+									<p><ins>1580</ins></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<!-- custom pager -->
+					<div class="custom-pager">
+						<a class="custom-prev" href="">Prev</a>
+						<a class="custom-next" href="">Next</a>
+					</div>
+					<!-- custom pager end -->
+				</div>
+				<!-- offers carousel end -->
+			</section>
+			<!-- lastminute offers end -->
+		</div>
+		<!-- max-wrap end -->
+	</div>
+	<!-- main end -->
+	
+	<!-- spacer -->
+	<div class="spacer"></div>
+	<!-- spacer end -->
+</div>
+<!-- wrapper end -->
+
+<!-- footer -->
+<footer class="footer">
+	<!-- search form -->
+	<div class="search-form">
+		<div class="max-wrap">
+			<form action="#" method="get">
+				<fieldset>
+					<div class="input-holder">
+						<input type="text" placeholder="" id="search">
+						<div class="btn btn-search">
+							<span class="icon-lupa"></span>
+							<input type="submit" value="">
+						</div>
+					</div>
+					<div class="label-holder">
+						<label for="search">Поиск по сайту</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- search form end -->
+	
+	<!-- max-wrap -->
+	<div class="max-wrap">
+		<!-- footer holder -->
+		<div class="footer-holder">
+			<!-- contacts info im footer -->
+			<div class="contacts-footer">
+				<strong class="phone-footer">+7 499 256 16 46</strong>
+				<a href="#callback-popup" class="btn btn-callback callback">Заказать звонок</a>
+				<div class="contact-us">
+					<span class="description">Связаться с нами:</span>
+					<span class="skype"><i class="icon-skype"></i><a href="mailto:info@spain4joy.ru">info@spain4joy.ru</a></span>
+				</div>
+			</div>
+			<!-- contacts info im footer end -->
+			
+			<!-- navigation bar -->
+			<div class="nav-bar">
+				<ul class="footer-links">
+					<li><a href="#">Аренда</a></li>
+					<li><a href="#">Продажа</a></li>
+					<li><a href="#">Ипотека</a></li>
+					<li><a href="#">Аренда автомобилей</a></li>
+				</ul>
+				<ul class="footer-links">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Услуги агентства</a></li>
+					<li><span class="icon-review"></span><a href="#">Отзывы</a></li>
+				</ul>
+				<ul class="footer-links">
+					<li><a href="#">Процесс покупки</a></li>
+					<li><a href="#">Налоги и расходы</a></li>
+					<li><a href="#">Мультивиза</a></li>
+					<li><a href="#">Достопримечательности</a></li>
+				</ul>
+			</div>
+			<!-- navigation bar end -->
+			
+			<!-- site map link -->
+			<div class="sitemap-link">
+				<a href="#">Карта сайта</a>
+			</div>
+			<!-- site map link end -->
+		</div>
+		<!-- footer holder end -->
+	</div>
+	<!-- max-wrap end -->
+</footer>
+<!-- footer end -->
+
+<!-- popups -->
+<div class="popup-holder">
+	<!-- callback form -->
+	<div id="callback-popup" class="callback-form">
+		<form action="#" method="get">
+			<fieldset>
+				<div class="heading">
+					<h2>Заказать звонок</h2>
+				</div>
+				<div class="callback-area">
+					<div class="form-line">
+						<div class="input-holder">
+							<input type="text" placeholder="Введите Ваше имя..." id="name">
+						</div>
+					</div>
+					<div class="form-line">
+						<div class="input-holder">
+							<input type="text" placeholder="Введите Ваш телефон..." id="time">
+						</div>
+					</div>
+					<div class="submit-holder">
+						<div class="btn btn-order">
+							<span>Заказать</span>
+							<input type="submit" value="">
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<!-- callback form end -->
+</div>
+<!-- popups end -->
+</body>
+</html>

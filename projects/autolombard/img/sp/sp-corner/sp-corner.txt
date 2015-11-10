@@ -1,0 +1,11 @@
+.01_1-corner-slider-l{ background-position: 0 0; width: 6px; height: 8px; } 
+.01_2-corner-slider-r{ background-position: 0 -28px; width: 6px; height: 8px; } 
+.02_1-corner-link-blue-l{ background-position: 0 -56px; width: 6px; height: 7px; } 
+.02_2-corner-link-blue-r{ background-position: 0 -83px; width: 6px; height: 7px; } 
+.03_1-corner-link-yellow-l{ background-position: 0 -110px; width: 6px; height: 8px; } 
+.03_2-corner-link-yellow-r{ background-position: 0 -138px; width: 6px; height: 8px; } 
+.04_1-corner-link-navi-l{ background-position: 0 -166px; width: 6px; height: 8px; } 
+.04_1-corner-link-navi-r{ background-position: 0 -194px; width: 6px; height: 8px; } 
+
+
+SPACE - 20px

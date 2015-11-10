@@ -1,0 +1,13 @@
+﻿.btn-red,
+.btn-red:hover,
+.btn-green,
+.btn-green:hover,
+.btn-gray,
+.btn-gray:hover,
+.btn-find-object,
+.btn-find-object:hover,
+.btn-orange{
+	position:relative;
+	filter: none !important;
+	filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false) !important;
+}

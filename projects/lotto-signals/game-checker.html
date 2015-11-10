@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Game Checker</title>
+</head>
+<body>
+<div id="template">
+	<div class="title-box"><h3>Quick Checker</h3></div>
+	<!--bet form-->
+	<div class="bet-form">
+		<form action="#" method="get">
+			<!--selects-->
+			<div class="selects">
+				<div class="select-holder country-select" data-next-select="states-select">
+					<select class="cselect country-select-one" data-placeholder="Choose Country">
+						<option value="2">France</option>
+						<option value="1">USA</option>
+						<option value="3">Ukraine</option>
+						<option value="4">Russia</option>
+					</select>
+				</div>
+
+				<div class="select-holder states-select" data-next-select="date-select">
+					<select class="cselect" data-placeholder="Choose State">
+						<option>Arizona</option>
+						<option>Arkansas</option>
+						<option>Texas</option>
+						<option>Florida</option>
+						<option>Tennessee</option>
+						<option>Pennsylvania</option>
+					</select>
+				</div>
+
+				<div class="select-holder date-select" data-next-select="game-select">
+					<select class="cselect" data-placeholder="Choose Date" disabled="disabled">
+						<option>02-Apr</option>
+						<option>01-Apr</option>
+						<option>31-Mar</option>
+						<option>30-Mar</option>
+						<option>29-Mar</option>
+						<option>28-Mar</option>
+						<option>27-Mar</option>
+						<option>26-Mar</option>
+						<option>25-Mar</option>
+						<option>24-Mar</option>
+						<option>23-Mar</option>
+						<option>22-Mar</option>
+						<option>21-Mar</option>
+						<option>20-Mar</option>
+						<option>19-Mar</option>
+						<option>18-Mar</option>
+						<option>17-Mar</option>
+						<option>16-Mar</option>
+						<option>15-Mar</option>
+						<option>14-Mar</option>
+						<option>13-Mar</option>
+						<option>12-Mar</option>
+						<option>11-Mar</option>
+						<option>10-Mar</option>
+						<option>9-Mar</option>
+						<option>8-Mar</option>
+						<option>7-Mar</option>
+						<option>6-Mar</option>
+						<option>5-Mar</option>
+						<option>4-Mar</option>
+						<option>3-Mar</option>
+						<option>2-Mar</option>
+						<option>1-Mar</option>
+					</select>
+				</div>
+
+				<div class="select-holder game-select">
+					<select class="cselect" data-placeholder="Choose Lottery" disabled="disabled">
+						<option value="game-select-wid-card">Wild Card</option>
+						<option value="game-select-megamillions">Megamillions</option>
+						<option value="game-select-pick-4">Pick 4</option>
+						<option value="game-select-pick-10">Pick 10</option>
+					</select>
+				</div>
+			</div>
+			<!--selects end-->
+
+			<!--choose numbers-->
+			<div class="choose-numbers">
+				<div class="form-line game-select-wid-card">
+					<div class="label-holder">
+						<label for="bet-form-number-1">Numbers:</label>
+					</div>
+					<!--numbers list-->
+					<ul class="numbers-list">
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" id="bet-form-number-1" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+					</ul>
+					<!--numbers list end-->
+
+					<!--choose cards-->
+					<ul class="choose-cards-list">
+						<li>
+							<div class="label-holder">
+								<label for="bet-form-face">Face:</label>
+							</div>
+							<div class="card-holder">
+								<div class="select-holder">
+									<select class="cselect" data-placeholder="Card" id="bet-form-face">
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="jack">Jack</option>
+										<option value="queen">Queen</option>
+										<option value="king">King</option>
+										<option value="ace">Ace</option>
+									</select>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="label-holder">
+								<label for="bet-form-suit">Suit:</label>
+							</div>
+							<div class="card-holder">
+								<div class="select-holder">
+									<select class="cselect" data-placeholder="Suit" id="bet-form-suit">
+										<option value="hearts">Hearts</option>
+										<option value="spades">Spades</option>
+										<option value="clubs">Clubs</option>
+										<option value="diamonds">Diamonds</option>
+									</select>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!--choose cards end-->
+				</div>
+
+				<div class="form-line game-select-megamillions">
+					<div class="label-holder">
+						<label for="bet-form-number-2">Numbers:</label>
+					</div>
+					<!--numbers list-->
+					<ul class="numbers-list">
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" id="bet-form-number-2" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+					</ul>
+					<!--numbers list end-->
+
+					<!--super balls-->
+					<ul class="supper-ball">
+						<li>
+							<div class="label-holder">
+								<label for="bet-form-megaball">Mega ball:</label>
+							</div>
+							<div class="input-holder">
+								<input type="text" placeholder="" id="bet-form-megaball">
+							</div>
+						</li>
+						<li>
+							<div class="label-holder">
+								<label for="bet-form-megaplier">Megaplier:</label>
+							</div>
+							<div class="input-holder">
+								<input type="text" placeholder="" id="bet-form-megaplier">
+							</div>
+						</li>
+					</ul>
+					<!--super balls end-->
+				</div>
+
+				<div class="form-line game-select-pick-4">
+					<div class="label-holder">
+						<label for="bet-form-number-3">Numbers:</label>
+					</div>
+					<!--numbers list-->
+					<ul class="numbers-list">
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" id="bet-form-number-3" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+					</ul>
+					<!--numbers list end-->
+
+					<!--choose cards-->
+					<ul class="choose-cards-list">
+						<li>
+							<div class="card-holder">
+								<label class="radio"> <input class="def-radio" type="radio" name="time" checked="checked"> <span class="label-text">Midday</span> </label>
+							</div>
+						</li>
+						<li>
+							<div class="card-holder">
+								<label class="radio"> <input class="def-radio" type="radio" name="time"> <span class="label-text">Evening</span> </label>
+							</div>
+						</li>
+					</ul>
+					<!--choose cards end-->
+				</div>
+
+				<div class="form-line game-select-pick-10">
+					<div class="label-holder">
+						<label for="bet-form-number-4">Numbers:</label>
+					</div>
+					<!--numbers list-->
+					<ul class="numbers-list">
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" id="bet-form-number-4" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+						<li>
+							<div class="input-holder">
+								<input type="text" placeholder="" />
+							</div>
+						</li>
+					</ul>
+					<!--numbers list end-->
+				</div>
+
+				<div class="form-buttons">
+					<a href="#" class="btn-default check-results" data-toggle="modal" data-target="#quick-checker-popup">Check result</a>
+				</div>
+			</div>
+			<!--choose numbers end-->
+		</form>
+	</div>
+	<!--bet form end-->
+</div>
+</body>
+</html>

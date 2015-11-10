@@ -1,0 +1,9 @@
+.01_1-icon-magnifier{ background-position: 0 0; width: 13px; height: 13px; } 
+.01_2-icon-magnifier-small{ background-position: 0 -33px; width: 10px; height: 11px; } 
+.02_1-icon-toddler{ background-position: 0 -64px; width: 21px; height: 21px; } 
+.03_1-icon-edit{ background-position: 0 -105px; width: 28px; height: 29px; } 
+.04_1-icon-bullet-list{ background-position: 0 -154px; width: 11px; height: 11px; } 
+.05_1-icon-select{ background-position: 0 -185px; width: 10px; height: 6px; } 
+
+
+SPACE - 20px

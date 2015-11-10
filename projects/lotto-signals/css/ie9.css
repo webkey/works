@@ -1,0 +1,8 @@
+﻿.header-nav,
+.footer,
+.video-box,
+.large-counter{
+	position:relative;
+	filter: none !important;
+	filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false) !important;
+}

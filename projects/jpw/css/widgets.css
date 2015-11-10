@@ -1,0 +1,393 @@
+/*  
+	--- WIDGETS CONTAINS --- 
+	
+	0. ui-lightness
+	1. UI Multiselect
+	2. Jquery Checkbox (check/radio)
+	3. Accordion
+
+*/
+
+/*--- 0. ui-lightness ---*/
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0); /* support: IE8 */
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*--- 0. ui-lightness end ---*/
+
+/*--- 1. UI Multiselect ---*/
+/* jquery multiselect core */
+.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px; }
+ 
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:0.9em }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+ 
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { position:relative; top:1px }
+.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+ 
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+/* jquery multiselect core end */
+ 
+/* jquery multiselect style */
+button.cselect {
+	display:block;
+	position:relative;
+	zoom:1;
+	padding:0;
+	margin:0;
+	line-height: 16px;
+	background:none;
+	border: none;
+}
+button.cselect span+span {
+	display:block;
+	background-color:#fff;
+	position:relative;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 6px 27px 6px 17px;
+	color: #515151;
+	font-weight: 400;
+	border-radius: 4px;
+	border: 1px solid #d5d5d5;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-height: 22px;
+}
+button.cselect .ui-icon {
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+	width:30px;
+	display:block;
+	z-index: 1;
+}
+/*delete*/
+button.cselect .ui-icon:after{
+	right: 13px;
+	top: 16px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(97, 97, 97, 0);
+	border-top-color: #616161;
+	border-width: 5px;
+}
+/*delete end*/
+button.cselect .select-text {
+	display:block;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+/* multiselect button end */
+
+/* multiselect menu */
+div.cselect.ui-multiselect-menu {
+	padding: 0 0 11px;
+	margin: 0;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+div.cselect .ui-multiselect-checkboxes {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	height: auto !important;
+	max-height:245px;
+	overflow:auto;
+}
+div.cselect .ui-multiselect-checkboxes li {padding:0;}
+div.cselect .ui-multiselect-checkboxes label input {
+	position: absolute;
+	left: -9999px;
+}
+div.cselect .ui-multiselect-checkboxes input+span:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 18px;
+	height: 12px;
+	width: 12px;
+	background: url(../img/sprite-forms.png) 0 0 no-repeat;
+}
+div.cselect .ui-multiselect-checkboxes input:checked+span:after {
+	background-position: 0 -32px;
+}
+div.cselect .ui-multiselect-checkboxes label {
+	display:block;
+	cursor:pointer;
+	font-size: 14px;
+	line-height: 22px;
+	color: #515151;
+	font-weight: 400;
+	padding:5px 18px 6px 45px;
+	position: relative;
+}
+div.cselect .ui-multiselect-checkboxes label:hover{
+	background-color: #f0f0f0;
+}
+div.cselect .ui-multiselect-checkboxes label.ui-state-active {
+	background-color:#f7f7f7;
+}
+
+.ui-multiselect-menu .ui-multiselect-header{
+	display: block;
+	padding: 20px 18px 17px 18px;
+	margin: 0;
+}
+.ui-multiselect-hasfilter ul{
+	top: 2px;
+}
+.ui-multiselect-menu .ui-multiselect-filter{
+	font-size: 11px;
+}
+.ui-multiselect-menu .ui-multiselect-filter .input-holder{
+	padding: 8px 10px 7px 34px;
+	background: url(../img/sprite-icons.png) no-repeat 10px -150px;
+	border-radius: 4px;
+}
+/* placeholder */
+.ui-multiselect-menu .ui-multiselect-filter input::-webkit-input-placeholder{color: #dadada;}
+.ui-multiselect-menu .ui-multiselect-filter input:-moz-placeholder{color: #dadada;}
+.ui-multiselect-menu .ui-multiselect-filter input::-moz-placeholder{color: #dadada; opacity: 1;}
+.ui-multiselect-menu .ui-multiselect-filter input:-ms-input-placeholder{color: #dadada; opacity: 1;}
+.ui-multiselect-menu .ui-multiselect-filter input.placeholder {color: #dadada; opacity: 1;}
+/* placeholder end */
+.ui-widget-header .ui-helper-reset li:first-child,
+.ui-widget-header .ui-helper-reset li:first-child+li{
+	display: none;
+}
+.ui-multiselect-menu li.ui-multiselect-close {
+	float: none;
+	left: 29px;
+	position: absolute;
+	top: 32px;
+}
+.ui-multiselect-menu .ui-multiselect-close a.ui-multiselect-close{}
+.ui-multiselect-menu .ui-multiselect-close .ui-icon-circle-close{
+	display: block;
+	background: url(../img/sprite-icons.png) no-repeat 0 -161px;
+	height: 13px;
+	width: 14px;
+}
+/* multiselect menu end */
+
+/*select pages*/
+button.select-pages span+span {
+	padding: 3px 20px 2px 8px;
+	border-radius: 0;
+}
+button.select-pages .ui-icon:after{
+	right: 10px;
+	top: 13px;
+}
+div.simple-select.ui-multiselect-menu{
+	padding: 0;
+}
+div.simple-select .ui-multiselect-checkboxes input+span:after {
+	content: none;
+	display: none;
+}
+div.select-pages .ui-multiselect-checkboxes label {
+	padding:3px 8px 2px;
+}
+/*select pages end*/
+/*--- 1. UI Multiselect End ---*/
+
+/*--- 2. Jquery Checkbox (check/radio) ---*/
+/* checkbox */
+.jquery-checkbox{
+	cursor: pointer;
+	margin: 4px 14px 0 0;
+	font-size: 12px;
+	line-height: 12px;
+	height: 12px;
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	vertical-align:top;
+}
+.jquery-checkbox .mark {display: inline;}
+
+.jquery-checkbox img {
+	vertical-align: middle;
+	height: 12px;
+	width: 12px;
+	background: url(../img/sprite-forms.png) 0 0 no-repeat;
+}
+.jquery-checkbox img,
+.jquery-checkbox-disabled img,
+.jquery-checkbox-checked .jquery-checkbox-disabled img{background-position: 0 0;}
+
+.jquery-checkbox-checked img,
+.jquery-checkbox-checked .jquery-checkbox-hover img {background-position: 0 -32px; }
+/* checkbox end */
+
+/* radio */
+.jquery-radiobox {
+	cursor: pointer;
+	margin: 5px 5px 0 0;
+	font-size: 14px;
+	line-height: 14px;
+	height: 14px;
+}
+.jquery-radiobox .mark {
+	display: inline;
+}
+
+.jquery-radiobox img {
+	vertical-align: top;
+	width: 14px;
+	height: 14px;
+	background: url(../img/sprite-forms.png) 0 0 no-repeat;
+}
+
+.jquery-radiobox img,
+.jquery-radiobox-disabled img,
+.jquery-radiobox-checked .jquery-radiobox-disabled img{background-position: 0 0;}
+
+.jquery-radiobox-checked img,
+.jquery-radiobox-checked .jquery-radiobox-hover img,
+.jquery-radiobox-checked img{background-position: 0 -34px;}
+/* radio end */
+/*--- 2. Jquery Checkbox (check/radio) ---*/
+
+/*--- 3. Accordion ---*/
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding: 23px 0 24px;
+	border-top: 1px solid #d8d8d8;
+	min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-header:first-child {
+	padding-top: 0;
+}
+.ui-accordion .ui-accordion-header:first-child{
+	border: none;
+}
+.ui-accordion .ui-accordion-icons {
+	padding-right: 25px;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	right: 0;
+	top: 28px;
+	background: url(../img/sprite-icons.png) no-repeat 0 -63px;
+	height: 12px;
+	width: 12px;
+}
+.ui-accordion .ui-accordion-header:first-child .ui-accordion-header-icon {
+	top: 6px;
+}
+.ui-accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon {
+	background-position: 0 -31px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 0 0 26px;
+	border-top: 0;
+	overflow: auto;
+	color: #757575;
+}
+/*--- 3. Accordion end ---*/

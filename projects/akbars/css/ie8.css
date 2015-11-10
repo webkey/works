@@ -1,0 +1,25 @@
+﻿.objects-description{filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3f4f2ef', endColorstr='#e3f4f2ef',GradientType=0 );}
+.nav-list .sub-nav ul,
+.ui-tooltip,
+.callback-form,
+.callback-confirm{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6025813', endColorstr='#e6025813',GradientType=0 );
+}
+.added-flats-box{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', endColorstr='#f2ffffff',GradientType=0 );
+}
+.overlay-white{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 );
+}
+.btn-open-map,
+.btn-close-map{
+	padding: 4px 6px 4px 24px;
+	border: 1px solid #38a445;
+}
+.filters-content .btn-open-map,
+.filters-content .btn-close-map{
+	color: #000;
+	border-color: #dfdad5;
+}
+.intro .tab-controls a{border: 1px solid #6c87a8;}
+.likes-box .btn-green{border-bottom: 4px solid #0b561b;}

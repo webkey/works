@@ -1,0 +1,34 @@
+﻿.person-list,
+.person-list li
+{behavior:expression(!this.isInserted==true ? this.isInserted=(this.insertBefore(document.createElement("after"))) : '');}
+.add-info-list li {
+	behavior: expression(
+		(this.listFlag!=null ? this.listFlag=true : (
+			(function(t){
+				if (t.parentNode.tagName == 'OL') {
+					var txt = (++t.parentNode.IEcounter || (t.parentNode.IEcounter = 1));
+					if (!t.childNodes.length) {
+						t.innerHTML = '<before>'+txt+'</before>';
+					} else {
+						t.before = document.createElement("before");
+						t.before.appendChild(document.createTextNode(txt));
+						t.insertBefore(t.before,t.childNodes(0));
+					}
+					t.style.behavior= '';
+				}
+			})(this)
+		),this.listFlag=true)
+	);
+}
+.price-table td .icon-yes,
+.price-table td .icon-no{
+	text-indent: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.info-form-frame{zoom: 1;}
+.person-list li{width: 24.9%;}
+.reason-item,
+.causes-list,
+.reviews-list li{width: 49.9%;}
+.reviews-box{zoom: 1;}

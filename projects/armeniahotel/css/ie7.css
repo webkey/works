@@ -1,0 +1,28 @@
+﻿.header,
+.reservation-form .input-holder,
+.mask-zoom,
+.max-wrap,
+.main-wrap,
+.footer,
+.btn-zoom{
+	zoom: 1;
+}
+.browse-list{
+	float: left;
+}
+.previews-photos-list li a{
+	behavior:expression(!this.isInserted==true ? this.isInserted=(this.insertBefore(document.createElement("after"))) : '');
+}
+.contacts-form .form-row .form-line{
+	width: 49.5%;
+}
+.nav-list{
+	margin: 0;
+}
+.menu-list li>span,
+.menu-list a{
+	zoom: 1;
+}
+.select-inner{
+	height: 16px;
+}

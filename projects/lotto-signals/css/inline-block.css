@@ -1,0 +1,37 @@
+[class|="icon"],
+[class*=" icon-"],
+a [class*=" icon-"],
+[class|="arrow"],
+[class*=" arrow-"],
+[class|="soc-icon"],
+[class*=" soc-icon-"],
+[class|="btn"],
+[class*=" btn-"],
+[class|="corner"],
+[class*=" corner-"],
+.icon-star,
+.user-options > li,
+.feature-img,
+.feature-description,
+td .rate,
+.likes > div,
+.complains-counter,
+.payment-list li,
+.lottery-numbers li,
+.social-list li,
+.article-text .holder,
+.joined-us .holder,
+.joined-us .text-inner,
+.copyright,
+.aaa,
+.aaa,
+.aaa,
+.aaa,
+.aaa
+{
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	vertical-align:top;
+}

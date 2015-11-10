@@ -1,0 +1,20 @@
+[class*="-list"],
+[class*="-list"] ul,
+.user-options,
+.lottery-numbers,
+.lottery-balls,
+.supper-ball,
+.latest-posts,
+.categories-menu,
+.nav-tabs,
+.aaa,
+.aaa,
+.aaa,
+.aaa
+{
+	margin:0;
+	list-style:none;
+	border:0;
+	padding:0;
+	background:none;
+}

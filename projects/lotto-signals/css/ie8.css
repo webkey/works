@@ -1,0 +1,43 @@
+﻿body{
+	min-width: 1200px;
+}
+.signals > span{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+			src='img/bg/bg-flap.png',
+			sizingMethod='scale');
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+			src='img/bg/bg-flap.png',
+			sizingMethod='scale')";
+}
+.main-heading{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+			src='img/bg/bg-heading-01.png',
+			sizingMethod='scale');
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/bg/bg-heading-01.png',
+	sizingMethod='scale')";
+}
+.login-heading{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+			src='img/bg/bg-login.png',
+			sizingMethod='scale');
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/bg/bg-login.png',
+	sizingMethod='scale')";
+}
+.header-nav,
+.footer{
+	background: url(../img/bg/bg-header.png) repeat-y 50% 0;
+}
+.copyright{
+	color: #d6d6d6;
+}
+.footer-logo{
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+			src='img/logo-footer.png',
+			sizingMethod='scale');
+}
